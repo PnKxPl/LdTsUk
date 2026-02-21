@@ -1,3 +1,4 @@
 /gamemode creative
 /gamemode survival
 /gamemode creative
+/summon minecraft:zombie
