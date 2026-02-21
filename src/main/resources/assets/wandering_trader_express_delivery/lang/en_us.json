@@ -25,6 +25,7 @@
   "config.wandering_trader_express_delivery.enable_error_logs": "Enable Error Logs",
   "config.wandering_trader_express_delivery.enable_debug_logs.tooltip": "Enable detailed debug logs for development and troubleshooting",
   "config.wandering_trader_express_delivery.enable_info_logs.tooltip": "Enable info logs for general operations",
+  "config.wandering_trader_express_delivery.enable_info_logs.tooltip": "Enable info logs for general operations",
   "config.wandering_trader_express_delivery.enable_warn_logs.tooltip": "Enable warn logs for potential issues",
   "config.wandering_trader_express_delivery.enable_error_logs.tooltip": "Enable error logs for critical issues",
 
