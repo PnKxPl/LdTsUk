@@ -4,100 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/betterCommentsSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LqLhSuDi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPLATE_LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/DIM-1/data/neoforge_data_attachments.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/DIM-1/data/raids.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/DIM1/data/neoforge_data_attachments.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/DIM1/data/raids_end.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/neoforge_data_attachments.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/raids.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/random_sequences.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/wandering_trader_express_delivery/active_deliveries.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/wandering_trader_express_delivery/pending_disappearance_events.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/wandering_trader_express_delivery/pending_management_events.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/wandering_trader_express_delivery/trade_lists.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/data/wandering_trader_express_delivery/trade_prices.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/entities/r.-1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/entities/r.-1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/entities/r.0.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/entities/r.0.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/level.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/level.dat_old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/poi/r.-1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/poi/r.-1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/poi/r.0.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/poi/r.0.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/region/r.-1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/region/r.-1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/region/r.0.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/region/r.0.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/serverconfig/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/session.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/2026年2月20日/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/EventHandler.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/读全件" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/c用这, cout用这" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/en_us.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/templates/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/EventHandler1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/WanderingTraderExpressDeliveryClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/delivery/DeliveryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/delivery/DeliveryMovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/InterceptManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/MobConfigManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/TimeCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/TradeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/TradePriceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/PendingDisappearanceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/PendingManagementManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/BanditExpirationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/DeliveryExpirationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/TradeListExpirationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/WanderingTraderExpirationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/management/PendingBanditEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/management/PendingWanderingTraderEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/EntityDeathListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/EnvironmentChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/LoggerUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/PlayerLoginListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/RareItemGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/草泥马的`乱读件" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/resources/assets/wandering_trader_express_delivery/lang/c用这, cout用这" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/resources/assets/wandering_trader_express_delivery/lang/en_us.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/新建文件夹/src/main/templates/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/流浪速递" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/用(流浪速递)改Ys(LqLhSuDi)Gl_Ys_LqLhSuDi_Gl" afterDir="false" />
+    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026Nm2Yt21Ri18Ui33Ff44">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/EventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/EventHandler1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/WanderingTraderExpressDeliveryClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/delivery/DeliveryManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/delivery/DeliveryMovement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/InterceptManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/MobConfigManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/TimeCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/TradeManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/manager/TradePriceManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/PendingDisappearanceManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/PendingManagementManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/BanditExpirationEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/DeliveryExpirationEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/TradeListExpirationEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/disappearance/WanderingTraderExpirationEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/management/PendingBanditEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/pending/management/PendingWanderingTraderEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/CommonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/EntityDeathListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/EnvironmentChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/LoggerUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/PlayerLoginListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/utils/RareItemGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/java/com/pnkxpl/gd_ts_uk/草泥马的`乱读件" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/resources/assets/wandering_trader_express_delivery/lang/c用这, cout用这" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/resources/assets/wandering_trader_express_delivery/lang/en_us.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/src/main/templates/META-INF/neoforge.mods.toml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +55,32 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ld_ts_uk__DaZi" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ld_ts_uk__DaZi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ld_ts_uk__DaZi" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ld_ts_uk__DaZi" type="f1a62948:ProjectNode" />
+                <item name="运行配置" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -129,18 +94,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PnKxPl"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PnKxPl&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PnKxPl/ld_ts_uk__DaZi.git",
-    "accountId": "55cf0d2e-7b70-47a5-8380-561fe2940de0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PnKxPl/ld_ts_uk__DaZi.git&quot;,
+    &quot;accountId&quot;: &quot;55cf0d2e-7b70-47a5-8380-561fe2940de0&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/core/BlockPos.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/network/chat/Component.class" root0="SKIP_INSPECTION" />
@@ -149,7 +114,7 @@
     <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -178,6 +143,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -191,12 +157,12 @@
       <recent name="com.ddd.wanderingtraderexpressdelivery" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Wandering-Trader-Express-main">
+  <component name="RunManager" selected="Gradle.ld_ts_uk__DaZi [jar]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
       <option name="PROGRAM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
+      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,7 +172,7 @@
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
       <option name="PROGRAM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\dataRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
+      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,7 +182,7 @@
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
       <option name="PROGRAM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
+      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,7 +192,7 @@
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
       <option name="PROGRAM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;gd_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
+      <option name="VM_PARAMETERS" value="@E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\classes\\java\\main;ld_ts_uk%%E:\\mcMod__DaZi\\neoForge__1.21.1\\ld_ts_uk__DaZi\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,6 +221,31 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
+    <configuration name="ld_ts_uk__DaZi [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="gd_ts_uk" />
       <method v="2">
@@ -268,6 +259,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ld_ts_uk__DaZi [jar]" />
         <item itemvalue="Gradle.Wandering-Trader-Express-main" />
       </list>
     </recent_temporary>
@@ -287,6 +279,15 @@
       <option name="presentableId" value="Default" />
       <updated>1771525729321</updated>
     </task>
+    <task id="LOCAL-00001" summary="2026Nm2Yt21Ri18Ui33Ff44">
+      <option name="closed" value="true" />
+      <created>1771670027013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771670027013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +300,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2026Nm2Yt21Ri18Ui33Ff44" />
+    <option name="LAST_COMMIT_MESSAGE" value="2026Nm2Yt21Ri18Ui33Ff44" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
