@@ -2,3 +2,18 @@
 /gamemode survival
 /gamemode creative
 /summon minecraft:zombie
+/summon minecraft:zombie.
+/summon minecraft:zombie
+/
+/summon minecraft:zombie
+/summon minecraft:zombie [nbt=1]
+/summon minecraft:zombie {noAi=1b}
+/summon minecraft:zombie -47.53 58.77 182.00 {noAi=1b}
+/summon minecraft:zombie -47.53 58.77 182.00 {NoAi=1b}
+/summon minecraft:zombie -47.53 58.77 182.00 {NoAI=1b}
+/summon minecraft:zombie -47.53 58.77 182.00 {NoAI=1}
+/summon minecraft:zombie -47.53 58.77 182.00 {NoAI:1}
+/summon minecraft:zombie {NoAI:1}
+/summon minecraft:zombie @a {NoAI:1}
+/summon minecraft:zombie ~ ~ ~ {NoAI:1}
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}
