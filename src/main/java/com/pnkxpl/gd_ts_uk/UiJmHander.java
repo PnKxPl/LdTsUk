@@ -24,6 +24,7 @@ import java.util.Vector;
 
 /*现象__(右键,每tick)会烧两次; 先(右键)启动*/
 public class UiJmHander {
+  /*!记录*/
   Player player = null;
   BlockPos 玩家坐标 = null;
   Level lev1 = null;
@@ -31,6 +32,10 @@ public class UiJmHander {
   BlockPos 敌怪坐标;
   int 怪块亮级;
   int 右键烧のplayerTickζ上1 = 0;
+  //*Vector<Entity> vEnt1=null;
+  //*ArrayList< Entity > vEntζ周围 = null, vEntζmonster = null, vEntζ敌 = null;int vEntζmonsterS = 0;
+  ArrayList< BlockPos > vEnt坐标ζ周围 = null, vEnt坐标ζmonster = null, vEnt坐标ζ敌 = null;
+  int vEnt坐标ζmonsterS = 0;
   /*!记录__设置*/
   /*不知`单位(是(1个`或半个)块)*/
   int 检rX = 0, 检rY = 0, 检rZ = 0;
@@ -42,7 +47,7 @@ public class UiJmHander {
     //检rX=192,检rY=192,检rZ=192;
     检rX = 64; 检rY = 32; 检rZ = 64;
   }
-  boolean 是否ent敌对( Entity entity ) {/*从(围火无怪NoHostilesAroundCampfire);2026年2月21日03时25分33*/
+  boolean 是否entMonster( Entity entity ) {/*从(围火无怪NoHostilesAroundCampfire);2026年2月21日03时25分33*/
     if( entity.getType( ).getCategory( ).equals( MobCategory.MONSTER ) ) {
       return true;
     }/*if*/ return false;
@@ -72,8 +77,6 @@ public class UiJmHander {
       }/*if*/
     }/*if*/
   }/*void*/
-  //*Vector<Entity> vEnt1=null;
-  ArrayList< Entity > vEntζ周围 = null, vEntζmonster = null, vEntζ敌 = null;
   /*!(forAGVEnt --> if亮Z烧怪)或(forVEnt --> if亮Z烧怪)*/
   public void gVEnt_检测entAIf亮Z烧怪( ) {/*2026年2月21日07时12分19*/
     int 当t = player.tickCount;
@@ -81,13 +84,14 @@ public class UiJmHander {
       player./*c*/displayClientMessage( Component.translatable( "forAGVEnt --> if亮Z烧怪", "" ), false );
       玩家坐标 = player.blockPosition( );
       ///*c*/player.displayClientMessage(Component.translatable("检测玩家周围", ""), false);
-      vEntζ周围 = null; vEntζmonster = null; vEntζ敌 = null;
+      //*vEntζ周围 = null; vEntζmonster = null; vEntζ敌 = null; vEntζmonsterS = 0;
+      vEnt坐标ζ周围 = null; vEnt坐标ζmonster = null; vEnt坐标ζ敌 = null; vEnt坐标ζmonsterS = 0;
       for(/*检测玩家周围*/Entity ent1 : lev1.getEntities( null/*todo 2026年2月23日23时05分31__这书啥*/
           , new AABB( 玩家坐标.getX( ) - 检rX, 玩家坐标.getY( ) - 检rY, 玩家坐标.getZ( ) - 检rZ, 玩家坐标.getX( ) + 检rX, 玩家坐标.getY( ) + 检rY, 玩家坐标.getZ( ) + 检rZ ) ) ) {
         //*vEntζ周围.add( ent1 );
-        if( 是否ent敌对( ent1 ) ) {
-          //*vEntζ敌.add( ent1 );
+        if( 是否entMonster( ent1 ) ) {
           敌怪坐标 = ent1.blockPosition( );
+          //*vEnt坐标ζmonster.  add( 敌怪坐标 ); vEnt坐标ζmonsterS++;/*2026年2月24日04时36分09*/
           怪块亮级/*g亮度*/ = LdJm_FhKy.getLightValue( 敌怪坐标 );
           {/*测试*/
             //在0亮Z对怪出负1伤( 怪块亮级, ent1 );
@@ -100,7 +104,8 @@ public class UiJmHander {
     } else {/*2026年2月24日03时42分23*/
       //*if(/*!时隔够=>将烧*/当t - 记t点ζ烧怪ζ上1 >= 设ζt隔ζ烧怪 ) {
       //*  player./*c*/displayClientMessage( Component.translatable( "forVEnt --> if亮Z烧怪", "" ), false );
-      //*  for( Entity ent1 : vEntζ敌 ) {
+      //*  for( int 一 =0; 一< vEntζmonsterS;一++ ) {
+      //*    Entity ent1 =vEntζmonster.get(一);//*[一];
       //*    BlockPos 敌怪坐标 = ent1.blockPosition( );
       //*    int /*g亮度*/怪块亮级 = LdJm_FhKy.getLightValue( 敌怪坐标 );
       //*    if亮Z烧怪( 怪块亮级, ent1 );
