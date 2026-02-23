@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026年2月24日04时33分14">
+    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026年2月24日04时43分16__vec怎么用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +132,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;应用程序.Client.executor&quot;: &quot;Coverage&quot;,
     &quot;应用程序.Data.executor&quot;: &quot;Run&quot;
   }
@@ -139,7 +142,7 @@
       <recent name="com.ddd.wanderingtraderexpressdelivery" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="Gradle.ld_ts_uk__DaZi [jar]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
@@ -341,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771878797224</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2026年2月24日04时43分16__vec怎么用">
+      <option name="closed" value="true" />
+      <created>1771879418738</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1771879418738</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +376,8 @@
     <MESSAGE value="2026Nm2Yt22Ri03Ui07Ff25__能触发了" />
     <MESSAGE value="2026年2月22日03时51分42__修复" />
     <MESSAGE value="2026年2月24日04时33分14" />
-    <option name="LAST_COMMIT_MESSAGE" value="2026年2月24日04时33分14" />
+    <MESSAGE value="2026年2月24日04时43分16__vec怎么用" />
+    <option name="LAST_COMMIT_MESSAGE" value="2026年2月24日04时43分16__vec怎么用" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

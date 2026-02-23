@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
@@ -37,6 +38,7 @@ public class UiJmHander {
   ArrayList< BlockPos > vEnt坐标ζ周围 = null, vEnt坐标ζmonster = null, vEnt坐标ζ敌 = null;
   int vEnt坐标ζmonsterS = 0;
   /*!记录__设置*/
+  int 出伤ζ亮减 = 10 /*7__6(-1),7(开`出伤)*/,出伤乘=4;
   /*不知`单位(是(1个`或半个)块)*/
   int 检rX = 0, 检rY = 0, 检rZ = 0;
   /*名__t隔=tick隔*//*300=15s,20=1s*/
@@ -50,12 +52,13 @@ public class UiJmHander {
   boolean 是否entMonster( Entity entity ) {/*从(围火无怪NoHostilesAroundCampfire);2026年2月21日03时25分33*/
     if( entity.getType( ).getCategory( ).equals( MobCategory.MONSTER ) ) {
       return true;
+    }/*if*/ if( entity.getType( ).getCategory( ).equals( MobCategory.MONSTER ) ) {
+      return true;
     }/*if*/ return false;
   }/*boolean*/
   /*没用*/
   /*方__燃烧,if亮ZHurt*/
   public void if亮Z烧怪(/*入*/int 怪块亮级,/*出*/Entity ent1 ) {/*2026年2月21日18时11分01*/
-    if(/*见光=>烧*/怪块亮级 > 7 ) {
       //if亮Z烧怪(怪块亮级,ent1);
       //ent1.addTag();
       //*int 设ζ友好 = -1;
@@ -71,9 +74,15 @@ public class UiJmHander {
       //*ent1.level().isClientSide=false;
       //ent1.level().addParticle(...);
       ///if (/*已着火=>重新着火*/ent1.isOnFire()) { ent1.clearFire(); }/*if*/
+    if(/*见光=>烧*/怪块亮级 > 6 ) {
       ent1.setRemainingFireTicks( 40 );/*连续`和重新=连续扣血,=不(点1下烧1下)*/ if(/*光级>1=>攻击*/怪块亮级 > 1 ) {
         ///*c*/player.displayClientMessage(Component.translatable("触hurt", ""), false);
-        ent1.hurt( player.damageSources( ).inFire( ), 怪块亮级 - 1 );/*从(豆包)*/
+        ///ent1.hurt( player.damageSources( ).inFire( ), (怪块亮级 - 出伤ζ亮减 )*出伤乘);/*烧=不打坚守者; 从(豆包)*/
+        ///ent1.hurt( player.damageSources( ).playerAttack( player ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+        ///ent1.hurt( player.damageSources( ).dragonBreath(  ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+        ///ent1.hurt( ent1.damageSources( ).dragonBreath(  ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+        ///ent1.hurt( player.damageSources( ).anvil( ent1 ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+        ent1.hurt( ent1.damageSources( ).inWall(  ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
       }/*if*/
     }/*if*/
   }/*void*/
@@ -128,14 +137,16 @@ public class UiJmHander {
   /*tickCount不是(最大=19),自增*/
   /*ChunkTicketLevelUpdatedEvent =彳亍1次;    ServerTickEvent.Post =可; */
   @SubscribeEvent public void onTick( ServerTickEvent.Post 事 ) {/*2026年2月21日06时17分58*/
-    if( player == null ) {
-      return;
-    }/*if*/
+    if( player == null ) { return; }/*if*/
     ///if(/*!t隔,推迟彳亍*/player.tickCount > 15 ) {/*https://docs.neoforged.net/docs/entities/#mobcategory */}/*if*/
     /*?2026年2月22日01时19分43__原来是c,  2026年2月24日04时23分57__c需player*/
     ///player./*c*/displayClientMessage(Component.translatable("触tick", ""), false);
     if时隔Z_if亮Z烧( );
   }/*void*/
+  //*@SubscribeEvent public void LivingDamageEvent( LivingDamageEvent 事 ) {/*2026年2月24日05时06分31*/
+  //*  if( player == null ) { return; }/*if*/
+  //*  player./*c*/displayClientMessage( Component.translatable( "LivingDamageEvent <--伤源=", 事.getEntity().damageSources() ), false );
+  //*}/*void*/
   /**/;//▬算▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   /*用来__保证(右键立即彳亍, 不是每次右键都彳亍)*/
   public int 是否u1减u2大同u3( int u1, int u2, int u3 ) {

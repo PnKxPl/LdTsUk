@@ -17,3 +17,9 @@
 /summon minecraft:zombie @a {NoAI:1}
 /summon minecraft:zombie ~ ~ ~ {NoAI:1}
 /summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/summon minecraft:warden ~ ~ ~ {NoAI:0}
+/summon minecraft:wandering_trader ~ ~ ~ {NoAI:0}
+/summon minecraft:warden ~ ~ ~ {NoAI:0}
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/summon minecraft:warden ~ ~ ~ {NoAI:0}
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}

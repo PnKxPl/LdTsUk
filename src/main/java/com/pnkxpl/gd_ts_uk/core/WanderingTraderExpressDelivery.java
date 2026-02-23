@@ -50,7 +50,7 @@ public class WanderingTraderExpressDelivery {
     NeoForge.EVENT_BUS.register(eventHandler);
     //注册事件处理器(modEventBus);
     // 注册配置
-    //modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
     //LOGGER.info("流浪商人快递模组初始化完成");
   }
@@ -83,9 +83,10 @@ public class WanderingTraderExpressDelivery {
     /// NeoForge.EVENT_BUS.register(timeCalculator);
     ///
     NeoForge.EVENT_BUS.register(eventHandler);
+    //NeoForge.EVENT_BUS.register();
     /// NeoForge.EVENT_BUS.register(entityDeathListener);
     /// NeoForge.EVENT_BUS.register(new PlayerLoginListener());
-    /// NeoForge.EVENT_BUS.register(this );
+    NeoForge.EVENT_BUS.register(this );
     ///
     /// LOGGER.info("事件处理器注册完成");
   }
