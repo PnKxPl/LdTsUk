@@ -23,3 +23,22 @@
 /summon minecraft:zombie ~ ~ ~ {NoAI:0}
 /summon minecraft:warden ~ ~ ~ {NoAI:0}
 /summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/
+/tp -47.00 148.37 176.61
+/fill -44 82 178 -144 82 178
+/fill -44 82 178 -144 82 178 minecraft:acacia_fence_gate
+/fill -44 82 178 144 82 178 minecraft:acacia_fence_gate
+/fill -35 82 177 35 82 177
+/fill -35 82 177 35 82 177 minecraft:acacia_planks
+/fill -35 92 177 35 82 177 minecraft:acacia_planks
+/fill -35 85 177 35 85 177 minecraft:acacia_planks
+/fill -35 85 176 35 85 177 minecraft:acacia_planks
+/fill -35 82 175 35 82 145 stone
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/kill
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/
+/.
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/
+/summon minecraft:zombie ~ ~ ~ {NoAI:0}

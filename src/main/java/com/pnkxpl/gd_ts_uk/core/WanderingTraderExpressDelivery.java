@@ -23,73 +23,55 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 
-/**
- * 主模组类 - 流浪商人快递系统
- * 负责模组初始化、管理器创建和事件注册
- * 优化：集成实体死亡监听器，移除冗余代码
- * 修正：改进数据保存逻辑，确保符合保存要求
- */
-//@Mod(WanderingTraderExpressDelivery.MODID)
-//@EventBusSubscriber(WanderingTraderExpressDelivery.MODID )
-@Mod("ld_ts_uk" )
+/*** 从这开 - 流浪商人快递系统 */
+@Mod( WanderingTraderExpressDelivery.MODID ) //*@EventBusSubscriber(WanderingTraderExpressDelivery.MODID )
+///@Mod("ld_ts_uk" )
 public class WanderingTraderExpressDelivery {
   //!2026年2月21日23时49分22__是在这设置吗？
   public static final String MODID = "ld_ts_uk";
-  public static UiJmHander eventHandler = new UiJmHander();
+  //!单例实例
+  public static WanderingTraderExpressDelivery instance;
+  //!管理器实例
+  public static UiJmHander on事 = new UiJmHander();/*2026年2月25日03时12分25__在读conf前初始化了,内有初(Config)*/
+  //!服务器实例
+  private MinecraftServer server;
   /*用来__LOGGER.info*/
   ///public static final Logger LOGGER = LogUtils.getLogger();
-  /**
-   * 模组构造函数
-   */
-  public WanderingTraderExpressDelivery(IEventBus modEventBus, ModContainer modContainer) {
-    //instance = this;
-
-    // 注册通用设置
+  public WanderingTraderExpressDelivery( IEventBus modEventBus, ModContainer modContainer ) {
+    instance = this;
     //modEventBus.addListener(this::commonSetup);
-    //初始化管理器();
-    NeoForge.EVENT_BUS.register(eventHandler);
-    //注册事件处理器(modEventBus);
+    初始化( );
+    注册事件( modEventBus );
     // 注册配置
-    modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-    //LOGGER.info("流浪商人快递模组初始化完成");
+    modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能不是读件*/
   }
 
-  /**
-   * 初始化所有管理器
-   */
-
-  private void 初始化管理器() {
-    //按依赖顺序初始化管理器sheng
+  private void 初始化( ) {
     //timeCalculator = new TimeCalculator();
     //pendingDisappearanceManager = new PendingDisappearanceManager();
     //pendingManagementManager = new PendingManagementManager();
     //tradeManager = new TradeManager();
     //deliveryManager = new DeliveryManager();
     //interceptManager = new InterceptManager();
-    eventHandler = new UiJmHander();
+    ///on事 = new UiJmHander( ); //*on事.从configG量( );
     //entityDeathListener = new EntityDeathListener();
     //tradePriceManager = new TradePriceManager(); // 新增
-
-    /// LOGGER.info("所有管理器初始化完成");
   }
 
-  /**
-   * 注册事件处理器
-   */
-  /*2026年2月21日23时59分21__没有这=不闪退了*/
-  private void 注册事件处理器(IEventBus modEventBus) {
+  /*不用=不能注册*/
+  private void 注册事件( IEventBus modEventBus ) {
     // 注册到NeoForge事件总线
     /// NeoForge.EVENT_BUS.register(timeCalculator);
     ///
-    NeoForge.EVENT_BUS.register(eventHandler);
+    NeoForge.EVENT_BUS.register( on事 );
     //NeoForge.EVENT_BUS.register();
     /// NeoForge.EVENT_BUS.register(entityDeathListener);
     /// NeoForge.EVENT_BUS.register(new PlayerLoginListener());
-    NeoForge.EVENT_BUS.register(this );
-    ///
-    /// LOGGER.info("事件处理器注册完成");
+    NeoForge.EVENT_BUS.register( this );
   }
 
-
+  @SubscribeEvent
+  public void on服务器启动(ServerStartingEvent event) {
+    this.server = event.getServer();
+  }
 }

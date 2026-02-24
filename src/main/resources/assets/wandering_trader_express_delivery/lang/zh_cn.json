@@ -1,4 +1,4 @@
-{
+﻿{
   "wandering_trader_express_delivery.configuration.title": "流浪商人快递系统配置",
   "wandering_trader_express_delivery.configuration.section.wandering.trader.express.delivery.common.toml": "通用设置",
   "wandering_trader_express_delivery.configuration.section.wandering.trader.express.delivery.common.toml.title": "通用配置",
@@ -74,5 +74,6 @@
   "ent_x": "ent_x( %s )",
   "ent_z": "ent_z( %s )",
   "player.tickCount":"player.tickCount( %s )",
-  "iR":"iR( %s )"
+  "iR":"iR( %s )",
+  "从configG量 <--出伤乘":"从configG量 <--出伤乘=( %s )"
 }
