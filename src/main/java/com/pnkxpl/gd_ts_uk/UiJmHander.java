@@ -78,7 +78,7 @@ public class UiJmHander {
     当pl = event.getEntity( );
     /*?没用__不立即烧; 不烧; */
     //*int 当plTi = 当pl.tickCount;
-    //*/*c*/当pl.displayClientMessage(Component.translatable("当pl.tickCount", 当pl.tickCount), false);/*attentionBar=文本还是提示*/
+    //*当pl./*c*/displayClientMessage(Component.translatable("当pl.tickCount", 当pl.tickCount), false);/*attentionBar=文本还是提示*/
     //*/*立即彳亍,记录tick(保证不连彳亍)*/
     //*if (/*时隔>~=>触*/是否u1减u2大同u3(当plTi, 右键烧のplayerTickζ上1, 设ζt隔ζ烧怪) == 1) {
     //*if亮Z烧();

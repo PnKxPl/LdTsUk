@@ -104,7 +104,6 @@ public class ifLdZUkGy {
     ///  当pl.setNoGravity( false );
     ///}/*if*/
     if(/*!时隔够=>将检*/当t - 记t点ζ检entζ上1 >= 设ζt隔ζ检ent ) {
-      从configG量( );
       ///当pl./*c*/displayClientMessage( Component.translatable( "forAGVEnt --> if亮Z烧怪", "" ), false );
       玩家坐标 = 当pl.blockPosition( );
       //*vEntζ周围 = null; vEntζmonster = null; vEntζ敌 = null; vEntζmonsterS = 0;

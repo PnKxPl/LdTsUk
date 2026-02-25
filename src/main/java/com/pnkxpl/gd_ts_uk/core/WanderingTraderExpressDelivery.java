@@ -47,6 +47,7 @@ public class WanderingTraderExpressDelivery {
   }
 
   private void 初始化( ) {
+    on事.if亮Z烧怪.从configG量( ); ///当pl./*c*/displayClientMessage(Component.translatable("if亮Z烧怪.从configG量", 0), false);
     //timeCalculator = new TimeCalculator();
     //pendingDisappearanceManager = new PendingDisappearanceManager();
     //pendingManagementManager = new PendingManagementManager();
