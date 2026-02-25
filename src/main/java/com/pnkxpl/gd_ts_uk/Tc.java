@@ -1,4 +1,4 @@
-package com.pnkxpl.gd_ts_uk;
+package com.pnkxpl.tc_ts_tpatc;
 
 import com.ibm.icu.impl.coll.UVector32;
 import net.minecraft.core.BlockPos;
@@ -8,8 +8,9 @@ import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-//import static com.pnkxpl.gd_ts_uk.core.WanderingTraderExpressDelivery.MODID;
+//import static com.pnkxpl.tc_ts_tpatc.core.WanderingTraderExpressDelivery.MODID;
 
 /*名__Tc=跳*/
 public class Tc {
@@ -18,41 +19,22 @@ public class Tc {
   Player 当pl = null;
   BlockPos 当块pos = null;
   //*ServerboundMovePlayerPacket.Pos 当plPos
-  Position pos当plPos = null;
+  Position pos当pl = null;
   int 记tζsetNoGravity = -1500;
   public Tc( ) { }
   /**/;//▬jump▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-  /*现象__tp到上A跳*/ /*入__1=+1=到上1*/
-  public void tp到上( Entity ent1, int y ) {
-    //*ent1.setDeltaMovement(ent1.getDeltaMovement().x, 0, ent1.getDeltaMovement().z);/*没用(无关EventPriority); onTick=大多是普通跳跃; 向y速度=0*/
-    //*Vec3 v1= new Vec3(0, -1000, 0); pl1.addDeltaMovement(v1);/*没用*/
-    当块pos = ent1.blockPosition( );//*getPose();
-    ent1.setPos( 当块pos.getX( ), 当块pos.getY( ) + y, 当块pos.getZ( ) );/*+3=+3*/
-  }/*void*/
-  public void tp到上( Player pl1, int y ) {/*2026年2月25日07时12分48*/
-    //*pl1.setDeltaMovement(pl1.getDeltaMovement().x, 0, pl1.getDeltaMovement().z);/*没用(无关EventPriority); onTick=大多是普通跳跃; 向y速度=0*/
-    //*Vec3 v1= new Vec3(0, -1000, 0); pl1.addDeltaMovement(v1);/*没用*/
-    pl1./*c*/displayClientMessage( Component.translatable( "tp到上 <--当块pos.getY", 当块pos.getY( ) ), false );
-    int 新y = 当块pos.getY( ) + y;
-    pl1.setPos( 当块pos.getX( ), 新y, 当块pos.getZ( ) );/*+3=+3*/
-    新y += y;
-    pl1.setPosRaw( 当块pos.getX( ), 新y, 当块pos.getZ( ) );
-    pl1./*c*/displayClientMessage( Component.translatable( "tp到上 <--新y", 新y ), false );
-  }/*void*/
-  public void s无gravATp到上( Player pl1, int y ) {
-    当块pos = pl1.blockPosition( );
-    pos当plPos = pl1.position( );
-    double 新y = pos当plPos.y( ) + y; float 速乘 = ( float ) 0.2;
-    /*teleportTo=tp(坐标),不跳跃; teleportRelative=tp(相对),跳跃;*/
+  public void s无gravATp到上( Player pl1, int y ) {/*2026年2月25日14时47分47*/
+    if(是否pl的上の坐标是方块(pl1)==true){return;}/*if*/
+    ///当块pos = pl1.blockPosition( );
+    pos当pl = pl1.position( );
+    double 新y = pos当pl.y( ) + y;
+    /*teleportTo=tp(坐标)(不跳); teleportRelative=tp(相对)A跳;*/
     {//!tp
       pl1.teleportRelative( 0, y, 0 );
-      //pl1.setNoGravity( true ); pl1.teleportTo(pos当plPos.x( ), 新y, pos当plPos.z( ) );
-    } ;//*惯性乘(pl1,10);
-    pl1.getAbilities( ).setFlyingSpeed( 速乘 );
-    ///pl1.getAbilities(  ).setWalkingSpeed(速乘 );
-    //pl1.teleportTo( 0, 新y, 0 );/*+3=+3*/
-    pl1./*c*/displayClientMessage( Component.translatable( "tp到上 <--新y", 新y ), false );
-    ///当pl = pl1;
+      //pl1.setNoGravity( true ); pl1.teleportTo(pos当pl.x( ), 新y, pos当pl.z( ) );
+    } ;
+
+    ///pl1./*c*/displayClientMessage( Component.translatable( "tp到上 <--新y", 新y ), false );
     int 当t = pl1.tickCount; 记tζsetNoGravity = 当t;
   }/*void*/
   public void 恢复主角grav( Player pl1 ) {/*2026年2月25日07时07分41*/
@@ -60,6 +42,26 @@ public class Tc {
     if(/*!恢复主角grav*/当t - 记tζsetNoGravity >= 10 ) {
       pl1.setNoGravity( false );
     }/*if*/
+  }/*void*/
+  //不入__Position posPl, double 身高几米
+  public boolean 是否pl头の坐标是方块( Player pl1 ) {/*从豆包;2026年2月25日15时11分19*/
+    ///double pl的上y=posPl.y()+=身高几米;  double pl的上y = bposPl得头.getY()+1;
+    BlockPos bposPl得头 = pl1.blockPosition( ).above( 1 );
+    BlockState 头块状 = pl1.level( ).getBlockState(bposPl得头 );
+    ///if( 头块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "头是air", "" ), false ); }/*if*/
+    return !头块状.isAir( );
+  }/*boolean*/    public boolean 是否pl的上の坐标是方块( Player pl1 ) {/*2026年2月25日15时25分35*/
+    BlockPos bposPl的上 = pl1.blockPosition( ).above( 2 );
+    BlockState pl的上块状 = pl1.level( ).getBlockState( bposPl的上 );
+    if( !pl的上块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "头的上!=air", "" ), false ); }/*if*/
+    return !pl的上块状.isAir( );
+  }/*boolean*/
+  /**/;//▬计算jump落点▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  public void rJump落点( Player pl1 ) {/*2026年2月25日07时07分41*/
+    //!记录
+    Position 起坐标= pl1.position( );    int 起t = pl1.tickCount;
+    Vec3 vec3初速 = pl1.getDeltaMovement( ); ///AABB bb = pl1.getBoundingBox( );
+
   }/*void*/
   /**/;//!从`豆包▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   public void 惯性乘( Player pl1, float 乘这 ) {/*从豆包;2026年2月25日14时19分46*/
