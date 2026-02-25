@@ -15,15 +15,15 @@ public class Config {
   public static final ModConfigSpec.IntValue 说明 = bui读设件
       .comment( "//名__g=get; t=tick;    " )
       .comment("//gPlayer --> onTick__for:gEntities(检rX,检rZ,检rY)( "
-          ,"if( lightValue>if亮大这Z烧怪 )=>burn, hurt( inWall, (怪块亮级 -出伤ζ亮减) *出伤乘 )"
+          ,"if( lightValue>if亮大这Z烧怪 )=>( burn, if( lightValue>出伤ζ亮减 )=>hurt( inWall, (lightValue -出伤ζ亮减) *出伤乘 ) )"
       ,")    ")
       .translation( "" )
-      .defineInRange( "", 0, 0, 15000 );
+      .defineInRange( "", 0, 0, 15000 );/*max不<min*/
   /*!记录__设置*/
   public static final ModConfigSpec.IntValue 在首几t不彳亍 = bui读设件
       .defineInRange( "(没用)在首几t不彳亍", 15, 0, 15000 );
   public static final ModConfigSpec.IntValue if亮大这Z烧怪 = bui读设件
-      .defineInRange( "if亮大这Z烧怪", 10, 0, 15000 );
+      .defineInRange( "if亮大这Z烧怪", 6, -15000, 15000 );
   public static final ModConfigSpec.IntValue 出伤ζ亮减 = bui读设件
       .defineInRange( "出伤ζ亮减", 10, 0, 15000 );
   public static final ModConfigSpec.IntValue 出伤乘 = bui读设件
