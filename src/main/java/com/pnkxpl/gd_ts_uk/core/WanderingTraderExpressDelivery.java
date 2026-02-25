@@ -32,22 +32,24 @@ public class WanderingTraderExpressDelivery {
   //!单例实例
   public static WanderingTraderExpressDelivery instance;
   //!管理器实例
-  public static UiJmHander on事 = new UiJmHander();/*2026年2月25日03时12分25__在读conf前初始化了,内有初(Config)*/
+  public static UiJmHander on事 = new UiJmHander( );/*2026年2月25日03时12分25__在读conf前初始化了,内有初(Config)*/
   //!服务器实例
   private MinecraftServer server;
   /*用来__LOGGER.info*/
-  ///public static final Logger LOGGER = LogUtils.getLogger();
+  /// public static final Logger LOGGER = LogUtils.getLogger();
   public WanderingTraderExpressDelivery( IEventBus modEventBus, ModContainer modContainer ) {
     instance = this;
     //modEventBus.addListener(this::commonSetup);
     初始化( );
     注册事件( modEventBus );
     // 注册配置
-    modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能不是读件*/
+    modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能(不)是读件*/
+    {//!读件
+      on事.if亮Z烧怪.从configG量( ); ///当pl./*c*/displayClientMessage(Component.translatable("if亮Z烧怪.从configG量", 0), false);
+    } ;
   }
 
   private void 初始化( ) {
-    on事.if亮Z烧怪.从configG量( ); ///当pl./*c*/displayClientMessage(Component.translatable("if亮Z烧怪.从configG量", 0), false);
     //timeCalculator = new TimeCalculator();
     //pendingDisappearanceManager = new PendingDisappearanceManager();
     //pendingManagementManager = new PendingManagementManager();
@@ -72,7 +74,7 @@ public class WanderingTraderExpressDelivery {
   }
 
   @SubscribeEvent
-  public void on服务器启动(ServerStartingEvent event) {
-    this.server = event.getServer();
+  public void on服务器启动( ServerStartingEvent event ) {
+    this.server = event.getServer( );
   }
 }
