@@ -33,7 +33,7 @@ import java.util.Vector;
 /*现象__(右键,每tick)会烧两次; 先(右键)启动*/
 public class UiJmHander {
   public static Config 设件 = new Config( );
-  public static Tc 跳 = new Tc( );
+  public static com.pnkxpl.tc_ts_tpatc.Tc 跳 = new com.pnkxpl.tc_ts_tpatc.Tc( );
   public static ifLdZUkGy if亮Z烧怪 = new ifLdZUkGy( );
   //!
   /*!记录__设置*/
@@ -89,24 +89,20 @@ public class UiJmHander {
     //*  右键烧のplayerTickζ上1 = 0;
     //*}/*if*/
   }/*void*/
-  @SubscribeEvent public void PIEvζEntityInteract( PlayerInteractEvent.EntityInteract event ) {/*2026年2月21日07时26分33*/
+  @SubscribeEvent public void PIEvζent交互( PlayerInteractEvent.EntityInteract event ) {/*2026年2月21日07时26分33*/
     当pl = event.getEntity( );
   }/*void*/
-  @SubscribeEvent public void PIEvζLeftClickBlock( PlayerInteractEvent.LeftClickBlock event ) {
+  @SubscribeEvent public void PIEvζ左键点块( PlayerInteractEvent.LeftClickBlock event ) {
     当pl = event.getEntity( );
   }/*void*/
-  @SubscribeEvent public void PEveζPlayerLoggedInEvent( PlayerEvent.PlayerLoggedInEvent event ) {/*2026年2月22日03时00分25*/
+  @SubscribeEvent public void PEveζ玩家登陆事( PlayerEvent.PlayerLoggedInEvent event ) {/*2026年2月22日03时00分25*/
     当pl = event.getEntity( );
   }/*void*/
   /*没(setCanceled)*/
   //@SubscribeEvent(priority = EventPriority.LOWEST)
-  // @SubscribeEvent public void LEζ生物跳跃事( LivingEvent.LivingJumpEvent 事 ) {/*2026年2月24日13时34分23*/
-  //   Entity 当ent = 事.getEntity( ); //*ClientboundMoveEntityPacket.
-  //   if( 当pl != 当ent ) { return; }/*if*/
-  //   int 当t = 当pl.tickCount;
-  //   记tζsetNoGravity = 当t;
-  //   跳.当pl = 当pl; 跳.tp到上( 当ent, 1 );
-  //   ///当ent.setNoGravity( true );
-  // }/*void*/
+  @SubscribeEvent public void LEζ生物跳跃事( LivingEvent.LivingJumpEvent 事 ) {/*2026年2月24日13时34分23*/
+    Entity 当ent = 事.getEntity( ); if( 当pl != 当ent ) { return; }/*if*/
+    跳.s无gravATp到上(当pl,1);
+  }/*void*/
 
 }/*class*/

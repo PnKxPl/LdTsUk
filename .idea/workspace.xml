@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026年2月25日19时16分05">
+    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026n2y25r20u20f46">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/.vs/gd_ts_uk/v17/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/.vs/gd_ts_uk/v17/Browse.VC.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/Tc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/Tc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,7 @@
       <recent name="com.ddd.wanderingtraderexpressdelivery" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="Gradle.ld_ts_uk__DaZi [jar]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
@@ -393,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772018195342</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2026n2y25r20u20f46">
+      <option name="closed" value="true" />
+      <created>1772022054680</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772022054681</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +430,8 @@
     <MESSAGE value="2026年2月24日05时36分16__if(亮&gt;6)烧; if(亮&gt;10)出伤;" />
     <MESSAGE value="2026n2y25r05u26f59__+config" />
     <MESSAGE value="2026年2月25日19时16分05" />
-    <option name="LAST_COMMIT_MESSAGE" value="2026年2月25日19时16分05" />
+    <MESSAGE value="2026n2y25r20u20f46" />
+    <option name="LAST_COMMIT_MESSAGE" value="2026n2y25r20u20f46" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

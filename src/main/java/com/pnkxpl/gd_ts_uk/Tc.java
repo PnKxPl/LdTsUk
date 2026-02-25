@@ -23,8 +23,9 @@ public class Tc {
   int 记tζsetNoGravity = -1500;
   public Tc( ) { }
   /**/;//▬jump▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  //todo ClientboundMoveEntityPacket.
   public void s无gravATp到上( Player pl1, int y ) {/*2026年2月25日14时47分47*/
-    if(是否pl的上の坐标是方块(pl1)==true){return;}/*if*/
+    if( 是否pl的上の坐标是方块( pl1 ) == true ) { return; }/*if*/
     ///当块pos = pl1.blockPosition( );
     pos当pl = pl1.position( );
     double 新y = pos当pl.y( ) + y;
@@ -33,7 +34,6 @@ public class Tc {
       pl1.teleportRelative( 0, y, 0 );
       //pl1.setNoGravity( true ); pl1.teleportTo(pos当pl.x( ), 新y, pos当pl.z( ) );
     } ;
-
     ///pl1./*c*/displayClientMessage( Component.translatable( "tp到上 <--新y", 新y ), false );
     int 当t = pl1.tickCount; 记tζsetNoGravity = 当t;
   }/*void*/
@@ -47,10 +47,11 @@ public class Tc {
   public boolean 是否pl头の坐标是方块( Player pl1 ) {/*从豆包;2026年2月25日15时11分19*/
     ///double pl的上y=posPl.y()+=身高几米;  double pl的上y = bposPl得头.getY()+1;
     BlockPos bposPl得头 = pl1.blockPosition( ).above( 1 );
-    BlockState 头块状 = pl1.level( ).getBlockState(bposPl得头 );
+    BlockState 头块状 = pl1.level( ).getBlockState( bposPl得头 );
     ///if( 头块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "头是air", "" ), false ); }/*if*/
     return !头块状.isAir( );
-  }/*boolean*/    public boolean 是否pl的上の坐标是方块( Player pl1 ) {/*2026年2月25日15时25分35*/
+  }/*boolean*/
+  public boolean 是否pl的上の坐标是方块( Player pl1 ) {/*2026年2月25日15时25分35*/
     BlockPos bposPl的上 = pl1.blockPosition( ).above( 2 );
     BlockState pl的上块状 = pl1.level( ).getBlockState( bposPl的上 );
     if( !pl的上块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "头的上!=air", "" ), false ); }/*if*/
@@ -59,11 +60,19 @@ public class Tc {
   /**/;//▬计算jump落点▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   public void rJump落点( Player pl1 ) {/*2026年2月25日07时07分41*/
     //!记录
-    Position 起坐标= pl1.position( );    int 起t = pl1.tickCount;
-    Vec3 vec3初速 = pl1.getDeltaMovement( ); ///AABB bb = pl1.getBoundingBox( );
-
+    Position 起坐标 = pl1.position( ); int 起t = pl1.tickCount;
+    Vec3 vec3初速 = pl1.getDeltaMovement( );/*c空(无小括);*/ ///AABB bb = pl1.getBoundingBox( );
+    double 初速y=vec3初速.y;
+    当pl./*c*/displayClientMessage( Component.translatable( "vec3初速y", 初速y ), false );
+    当pl./*c*/displayClientMessage( Component.translatable( "vec3初速x", vec3初速.x ), false );
+    double y = 0, x = 0, z = 0;/*相对坐标*/
+    //!算程__(撞块)=>tp, (无结果)=>不彳亍
+    for( int t = 0 ; t < 100 ; t++ ) { // 最多模拟 5 秒
+      break;
+    }/*for*/
   }/*void*/
   /**/;//!从`豆包▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  //没用
   public void 惯性乘( Player pl1, float 乘这 ) {/*从豆包;2026年2月25日14时19分46*/
     Vec3 motion = pl1.getDeltaMovement( );
     pl1.setDeltaMovement( motion.scale( 乘这 ) ); //填1.5=1.5倍速度
