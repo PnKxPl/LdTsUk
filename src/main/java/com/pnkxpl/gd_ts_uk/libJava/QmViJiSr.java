@@ -43,6 +43,15 @@ public class QmViJiSr {
     ///*c*/player.displayClientMessage(Component.translatable("iR", iR), false);/*attentionBar=文本还是提示*/
     return iR;
   }/*void*/
+  /**/;//▬读取属性▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  public int 是否坐同( BlockPos bp1, BlockPos bp2 ) {/*2026年2月27日02时10分36*/
+    if( bp1==null || bp2==null ) {return -1;}/*if*/
+    if(bp1.getY() == bp2.getY() && bp1.getX() == bp2.getX() && bp1.getZ() == bp2.getZ() ) {
+      return 1;
+    }/*if*/
+    return 0;
+  }/*void*/
+
 
 
 }/*class*/

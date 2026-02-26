@@ -75,5 +75,6 @@
   "ent_z": "ent_z( %s )",
   "player.tickCount":"player.tickCount( %s )",
   "iR":"iR( %s )",
-  "从configG量 <--出伤乘":"从configG量 <--出伤乘=( %s )"
+  "从configG量 <--出伤乘":"从configG量 <--出伤乘=( %s )",
+  "co1":"co1( %s )"
 }

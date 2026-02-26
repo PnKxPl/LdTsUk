@@ -68,5 +68,6 @@
   "gui.wandering_trader_express_delivery.trade_requirement_and": "And: %s",
   "gui.wandering_trader_express_delivery.trade_max_uses": "Max Trades: %s",
 
-  "entity.wandering_trader_express_delivery.bandit": "Bandit"
+  "entity.wandering_trader_express_delivery.bandit": "Bandit",
+  "co1":"co1( %s )"
 }

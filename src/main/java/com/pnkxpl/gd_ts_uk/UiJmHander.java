@@ -3,8 +3,10 @@ import java.util.ArrayList;
 
 import com.ibm.icu.impl.coll.UVector32;
 import com.pnkxpl.gd_ts_uk.core.Config;
+import com.pnkxpl.gd_ts_uk.libJava.QmViJiSr;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundMoveEntityPacket;
 import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket;
@@ -33,8 +35,11 @@ import java.util.Vector;
 /*现象__(右键,每tick)会烧两次; 先(右键)启动*/
 public class UiJmHander {
   public static Config 设件 = new Config( );
+  public static QmViJiSr 前算 = new QmViJiSr( );
+
   public static com.pnkxpl.tc_ts_tpatc.Tc 跳 = new com.pnkxpl.tc_ts_tpatc.Tc( );
   public static ifLdZUkGy if亮Z烧怪 = new ifLdZUkGy( );
+  public static com.pnkxpl.tc_ts_tpatc.FhKyZlKyQm 放块在块前 = new com.pnkxpl.tc_ts_tpatc.FhKyZlKyQm( );
   //!
   /*!记录__设置*/
 
@@ -70,12 +75,18 @@ public class UiJmHander {
     if( 当pl == null ) { return; }/*if*/
     /*?2026年2月22日01时19分43__原来是c,  2026年2月24日04时23分57__c需player*/
     ///当pl./*c*/displayClientMessage(Component.translatable("触tick", ""), false);
-    if亮Z烧怪.if时隔Z_if亮Z烧( 当pl);
+    if亮Z烧怪.if时隔Z_if亮Z烧( 当pl );
+    {//!跳
+      跳.ifY大yZ改是否已去更高( 当pl );
+      ///跳.回定相yTp下( 当pl, -1 );
+    } ;
   }/*void*/
   /*用来__g(当pl),其他的没有做到*/
   //*@EventBusSubscriber(modid = MODID )
-  @SubscribeEvent public void PIEvζRightClickBlock( PlayerInteractEvent.RightClickBlock event ) {/*最初, 从( Wandering-Trader-Express-main  https://github.com/ddd575/Wandering-Trader-Express/tree/main )*/
-    当pl = event.getEntity( );
+  @SubscribeEvent public void PIEvζ右键点块( PlayerInteractEvent.RightClickBlock 事 ) {/*最初, 从( Wandering-Trader-Express-main  https://github.com/ddd575/Wandering-Trader-Express/tree/main )*/
+    当pl = 事.getEntity( );
+   放块在块前.PIEvζ右键点块ζ放块在块前( 事 );
+
     /*?没用__不立即烧; 不烧; */
     //*int 当plTi = 当pl.tickCount;
     //*当pl./*c*/displayClientMessage(Component.translatable("当pl.tickCount", 当pl.tickCount), false);/*attentionBar=文本还是提示*/
@@ -92,17 +103,25 @@ public class UiJmHander {
   @SubscribeEvent public void PIEvζent交互( PlayerInteractEvent.EntityInteract event ) {/*2026年2月21日07时26分33*/
     当pl = event.getEntity( );
   }/*void*/
-  @SubscribeEvent public void PIEvζ左键点块( PlayerInteractEvent.LeftClickBlock event ) {
-    当pl = event.getEntity( );
+  //(事.getPos,当pl.getOnPos)=块坐(不是`空气坐)    BlockPos不能==
+  @SubscribeEvent public void PIEvζ左键点块( PlayerInteractEvent.LeftClickBlock 事 ) {
+    当pl = 事.getEntity( );
+    ///当pl./*c*/displayClientMessage( Component.translatable( "co1",  事.getPos( ).getY() ), true );
+    ///当pl./*c*/displayClientMessage( Component.translatable( "co1",  当pl.getOnPos().getY() ), true );
+    ///当pl./*c*/displayClientMessage( Component.translatable( "co1" ,""  ), true );
+    if( 前算.是否坐同( 事.getPos( ), 当pl.getOnPos( ) ) == 1 ) {
+      ///当pl./*c*/displayClientMessage( Component.translatable( "co1", "" ), false );
+    }/*if*/
+
   }/*void*/
-  @SubscribeEvent public void PEveζ玩家登陆事( PlayerEvent.PlayerLoggedInEvent event ) {/*2026年2月22日03时00分25*/
-    当pl = event.getEntity( );
+  @SubscribeEvent public void PEveζ玩家登陆事( PlayerEvent.PlayerLoggedInEvent 事 ) {/*2026年2月22日03时00分25*/
+    当pl = 事.getEntity( );
   }/*void*/
   /*没(setCanceled)*/
   //@SubscribeEvent(priority = EventPriority.LOWEST)
   @SubscribeEvent public void LEζ生物跳跃事( LivingEvent.LivingJumpEvent 事 ) {/*2026年2月24日13时34分23*/
     Entity 当ent = 事.getEntity( ); if( 当pl != 当ent ) { return; }/*if*/
-    跳.s无gravATp到上(当pl,1);
+    跳.s无gravATp到上( 当pl, 1 );
   }/*void*/
 
 }/*class*/

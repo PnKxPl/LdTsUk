@@ -43,6 +43,7 @@ public class ifLdZUkGy {
   /*!记录__设置*/
 
   /*!记录*/
+  int 是否已读config = 0;
   Player 当pl = null;
   BlockPos 玩家坐标 = null;
   Level lev1 = null;
@@ -104,6 +105,10 @@ public class ifLdZUkGy {
     ///  当pl.setNoGravity( false );
     ///}/*if*/
     if(/*!时隔够=>将检*/当t - 记t点ζ检entζ上1 >= 设ζt隔ζ检ent ) {
+      if( 是否已读config == 0 ) {/*2026年2月26日04时10分44*/
+        从configG量( ); 当pl./*c*/displayClientMessage( Component.translatable( "if亮Z烧怪.从configG量", 0 ), false );
+        是否已读config = 1;
+      }/*if*/
       ///当pl./*c*/displayClientMessage( Component.translatable( "forAGVEnt --> if亮Z烧怪", "" ), false );
       玩家坐标 = 当pl.blockPosition( );
       //*vEntζ周围 = null; vEntζmonster = null; vEntζ敌 = null; vEntζmonsterS = 0;

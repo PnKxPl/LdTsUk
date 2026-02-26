@@ -15,6 +15,9 @@ import net.minecraft.world.phys.Vec3;
 /*名__Tc=跳*/
 public class Tc {
   //!记录_设置
+  //用来__tp后记y, 回y触发
+  int 设ζ回定相yTp下 = 1, 回定相yTp下 = 0, 是否in跳 = 0, 是否in跳A已tp上 = 0, 是否已去更高 = 0;
+  double tp后y = -1500;
   //!记录
   Player 当pl = null;
   BlockPos 当块pos = null;
@@ -22,20 +25,54 @@ public class Tc {
   Position pos当pl = null;
   int 记tζsetNoGravity = -1500;
   public Tc( ) { }
-  /**/;//▬jump▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  /**/;//▬jump▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  ;//▬▬▬▬▬jump=(tp上,jump,tp下)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   //todo ClientboundMoveEntityPacket.
-  public void s无gravATp到上( Player pl1, int y ) {/*2026年2月25日14时47分47*/
+  //!方__tp上,跳 --> 每t(检(是否已去更高)) --> ifY=>tp下
+  public void s无gravATp到上( Player pl1, int 相y ) {/*2026年2月25日14时47分47*/
     if( 是否pl的上の坐标是方块( pl1 ) == true ) { return; }/*if*/
     ///当块pos = pl1.blockPosition( );
     pos当pl = pl1.position( );
-    double 新y = pos当pl.y( ) + y;
+    double 新y = pos当pl.y( ) + 相y;
     /*teleportTo=tp(坐标)(不跳); teleportRelative=tp(相对)A跳;*/
     {//!tp
-      pl1.teleportRelative( 0, y, 0 );
+      pl1.teleportRelative( 0, 相y, 0 );
       //pl1.setNoGravity( true ); pl1.teleportTo(pos当pl.x( ), 新y, pos当pl.z( ) );
+    } ;
+    {//!tp后
+      是否in跳A已tp上=1;
+      if(/*=>记y*/设ζ回定相yTp下 == 1 ) {
+        tp后y = pl1.position( ).y;
+      }/*if*/
     } ;
     ///pl1./*c*/displayClientMessage( Component.translatable( "tp到上 <--新y", 新y ), false );
     int 当t = pl1.tickCount; 记tζsetNoGravity = 当t;
+  }/*void*/
+
+  /*是否已去更高=1*/
+  public void ifY大yZ改是否已去更高( Player pl1 ) {/*2026年2月26日13时06分32*/
+    if( 是否in跳A已tp上 == 1 ) {
+      if( pl1.position( ).y > tp后y ) { 是否已去更高 = 1; }/*if*/
+    }/*if*/
+  }/*void*/
+  //!没用
+  //入__负u=向下
+  /*是否已去更高=0*/
+  public void 回定相yTp下( Player pl1, int 相y ) {/*2026年2月26日12时58分27*/
+    if( 是否已去更高 == 1 ) {
+      if( pl1.position( ).y == tp后y ) {
+        //*if(/*回y,ifAir=>tp下*/ 是否pl的下の坐标是方块( pl1 ) == false ) {/*2026年2月26日14时04分58*/}/*if*/
+        {//!tp下
+          pl1.teleportRelative( 0, 相y, 0 );
+          pl1./*c*/displayClientMessage(Component.translatable("tp下", ""), false);
+        } ;
+
+        //todo 2026年2月26日12时57分31__是否初始化量?
+        是否已去更高 = 0;
+        是否in跳A已tp上=0;
+        是否in跳=0; tp后y=-1500;
+      }/*if*/
+    }/*if*/
   }/*void*/
   public void 恢复主角grav( Player pl1 ) {/*2026年2月25日07时07分41*/
     int 当t = pl1.tickCount;
@@ -43,6 +80,7 @@ public class Tc {
       pl1.setNoGravity( false );
     }/*if*/
   }/*void*/
+  /**/;//▬检测if块▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   //不入__Position posPl, double 身高几米
   public boolean 是否pl头の坐标是方块( Player pl1 ) {/*从豆包;2026年2月25日15时11分19*/
     ///double pl的上y=posPl.y()+=身高几米;  double pl的上y = bposPl得头.getY()+1;
@@ -54,15 +92,21 @@ public class Tc {
   public boolean 是否pl的上の坐标是方块( Player pl1 ) {/*2026年2月25日15时25分35*/
     BlockPos bposPl的上 = pl1.blockPosition( ).above( 2 );
     BlockState pl的上块状 = pl1.level( ).getBlockState( bposPl的上 );
-    if( !pl的上块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "头的上!=air", "" ), false ); }/*if*/
+    ///if( !pl的上块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "头的上!=air", "" ), false ); }/*if*/
     return !pl的上块状.isAir( );
+  }/*boolean*/
+  //!无规则
+  public boolean 是否pl的下の坐标是方块( Player pl1 ) {/*2026年2月26日13时46分53*/
+    BlockPos bposPl的下 = pl1.blockPosition( ).below( -2 );//-1=0=; 2=没变
+    BlockState pl的下块状 = pl1.level( ).getBlockState( bposPl的下 );if( pl的下块状.isAir( ) ) { pl1./*c*/displayClientMessage( Component.translatable( "pl的下=air", "" ), false ); }/*if*/
+    return !pl的下块状.isAir( );
   }/*boolean*/
   /**/;//▬计算jump落点▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   public void rJump落点( Player pl1 ) {/*2026年2月25日07时07分41*/
     //!记录
     Position 起坐标 = pl1.position( ); int 起t = pl1.tickCount;
     Vec3 vec3初速 = pl1.getDeltaMovement( );/*c空(无小括);*/ ///AABB bb = pl1.getBoundingBox( );
-    double 初速y=vec3初速.y;
+    double 初速y = vec3初速.y;
     当pl./*c*/displayClientMessage( Component.translatable( "vec3初速y", 初速y ), false );
     当pl./*c*/displayClientMessage( Component.translatable( "vec3初速x", vec3初速.x ), false );
     double y = 0, x = 0, z = 0;/*相对坐标*/

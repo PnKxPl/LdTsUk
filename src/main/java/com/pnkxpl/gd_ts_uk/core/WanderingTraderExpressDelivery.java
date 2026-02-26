@@ -43,9 +43,9 @@ public class WanderingTraderExpressDelivery {
     初始化( );
     注册事件( modEventBus );
     // 注册配置
-    modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能(不)是读件*/
     {//!读件
-      on事.if亮Z烧怪.从configG量( ); ///当pl./*c*/displayClientMessage(Component.translatable("if亮Z烧怪.从configG量", 0), false);
+    modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能(不)是读件*/
+      //!从configG量()不能在这
     } ;
   }
 
@@ -59,6 +59,7 @@ public class WanderingTraderExpressDelivery {
     ///on事 = new UiJmHander( ); //*on事.从configG量( );
     //entityDeathListener = new EntityDeathListener();
     //tradePriceManager = new TradePriceManager(); // 新增
+
   }
 
   /*不用=不能注册*/
