@@ -42,3 +42,7 @@
 /summon minecraft:zombie ~ ~ ~ {NoAI:0}
 /
 /summon minecraft:zombie ~ ~ ~ {NoAI:0}
+/gamemode survival
+/give @a minecraft:acacia_planks 10000;
+/give @a minecraft:acacia_planks 10000
+/give @a minecraft:acacia_planks 1000

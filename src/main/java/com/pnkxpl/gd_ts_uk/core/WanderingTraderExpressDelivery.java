@@ -29,22 +29,24 @@ import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 public class WanderingTraderExpressDelivery {
   //!2026年2月21日23时49分22__是在这设置吗？
   public static final String MODID = "ld_ts_uk";
+  public static final Logger LOGGER = LogUtils.getLogger( );
+
   //!单例实例
   public static WanderingTraderExpressDelivery instance;
   //!管理器实例
   public static UiJmHander on事 = new UiJmHander( );/*2026年2月25日03时12分25__在读conf前初始化了,内有初(Config)*/
   //!服务器实例
-  private MinecraftServer server;
+  public MinecraftServer server;
   /*用来__LOGGER.info*/
-  /// public static final Logger LOGGER = LogUtils.getLogger();
+  ///public static final Logger LOGGER = LogUtils.getLogger();
   public WanderingTraderExpressDelivery( IEventBus modEventBus, ModContainer modContainer ) {
     instance = this;
     //modEventBus.addListener(this::commonSetup);
     初始化( );
     注册事件( modEventBus );
-    // 注册配置
+    //注册配置
     {//!读件
-    modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能(不)是读件*/
+      modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能(不)是读件*/
       //!从configG量()不能在这
     } ;
   }
@@ -58,19 +60,19 @@ public class WanderingTraderExpressDelivery {
     //interceptManager = new InterceptManager();
     ///on事 = new UiJmHander( ); //*on事.从configG量( );
     //entityDeathListener = new EntityDeathListener();
-    //tradePriceManager = new TradePriceManager(); // 新增
+    //tradePriceManager = new TradePriceManager(); //新增
 
   }
 
   /*不用=不能注册*/
   private void 注册事件( IEventBus modEventBus ) {
-    // 注册到NeoForge事件总线
-    /// NeoForge.EVENT_BUS.register(timeCalculator);
+    //注册到NeoForge事件总线
+    ///NeoForge.EVENT_BUS.register(timeCalculator);
     ///
     NeoForge.EVENT_BUS.register( on事 );
     //NeoForge.EVENT_BUS.register();
-    /// NeoForge.EVENT_BUS.register(entityDeathListener);
-    /// NeoForge.EVENT_BUS.register(new PlayerLoginListener());
+    ///NeoForge.EVENT_BUS.register(entityDeathListener);
+    ///NeoForge.EVENT_BUS.register(new PlayerLoginListener());
     NeoForge.EVENT_BUS.register( this );
   }
 

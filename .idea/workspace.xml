@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="移`读件()">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" afterDir="false" />
+    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026n2y27r__+放块在块前">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/Tc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/Tc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/ifLdZUkGy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/ifLdZUkGy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/Cs_DbBk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/Cs_DbBk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/QmViJiSr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/QmViJiSr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/en_us.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +157,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "应用程序.Client.executor": "Coverage",
     "应用程序.Data.executor": "Run"
   }

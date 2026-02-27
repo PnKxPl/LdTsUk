@@ -34,6 +34,7 @@ public class ifLdZUkGy {
   public static Config 设件 = new Config( );
   //!从设件
   /*!记录__设置*/
+  int 设ζ启=1;
   int if亮大这Z烧怪 = 6, 出伤ζ亮减 = 10/*7__6(-1),7(开`出伤)*/, 出伤乘 = 4;
   /*名__t隔=tick隔*//*300=15s,20=1s*/
   int 在首几t不彳亍 = 15, 设ζt隔ζ检ent = 20, 设ζt隔ζ烧怪 = 20;
@@ -44,7 +45,7 @@ public class ifLdZUkGy {
 
   /*!记录*/
   int 是否已读config = 0;
-  Player 当pl = null;
+  Player pl1 = null;
   BlockPos 玩家坐标 = null;
   Level lev1 = null;
   LayerLightEventListener LdJm_FhKy/*亮检ζ方块*/ = null;
@@ -64,6 +65,7 @@ public class ifLdZUkGy {
   public void 从configG量( ) {/*2026年2月25日03时16分44*/
     ///出伤ζ亮减 = Config.r出伤ζ亮减( ); 出伤乘 = Config.r出伤乘( );
     ///出伤ζ亮减 = 设件.r出伤ζ亮减( ); 出伤乘 = 设件.r出伤乘( );
+    设ζ启 = 设件.设ζ启ζif亮Z烧怪.get( );
     在首几t不彳亍 = 设件.在首几t不彳亍.get( );
     if亮大这Z烧怪 = 设件.if亮大这Z烧怪.get( );
     出伤ζ亮减 = 设件.出伤ζ亮减.get( ); 出伤乘 = 设件.出伤乘.get( );
@@ -87,11 +89,11 @@ public class ifLdZUkGy {
         if(/*得正u=>出伤*/怪块亮级 > 出伤ζ亮减 ) {
           {//!出伤
             ///*c*/当pl.displayClientMessage(Component.translatable("触hurt", ""), false);
-            ///ent1.hurt( 当pl.damageSources( ).inFire( ), (怪块亮级 - 出伤ζ亮减 )*出伤乘);/*烧=不打坚守者; 从(豆包)*/
-            ///ent1.hurt( 当pl.damageSources( ).playerAttack( 当pl ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
-            ///ent1.hurt( 当pl.damageSources( ).dragonBreath(  ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+            ///ent1.hurt( pl1.damageSources( ).inFire( ), (怪块亮级 - 出伤ζ亮减 )*出伤乘);/*烧=不打坚守者; 从(豆包)*/
+            ///ent1.hurt( pl1.damageSources( ).playerAttack( 当pl ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+            ///ent1.hurt( pl1.damageSources( ).dragonBreath(  ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
             ///ent1.hurt( ent1.damageSources( ).dragonBreath(  ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
-            ///ent1.hurt( 当pl.damageSources( ).anvil( ent1 ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
+            ///ent1.hurt( pl1.damageSources( ).anvil( ent1 ), (怪块亮级 - 出伤ζ亮减 )*出伤乘 );
             ent1.hurt( ent1.damageSources( ).inWall( ), ( 怪块亮级 - 出伤ζ亮减 ) * 出伤乘 );
           } ;
         }/*if*/
@@ -100,17 +102,17 @@ public class ifLdZUkGy {
   }/*void*/
   /*!(forAGVEnt --> if亮Z烧怪)或(forVEnt --> if亮Z烧怪)*/
   public void gVEnt_检测entAIf亮Z烧怪( ) {/*2026年2月21日07时12分19*/
-    int 当t = 当pl.tickCount;
+    int 当t = pl1.tickCount;
     ///if(/*!恢复主角grav*/当t - 记tζsetNoGravity >= 10 ) {
-    ///  当pl.setNoGravity( false );
+    /// pl1.setNoGravity( false );
     ///}/*if*/
     if(/*!时隔够=>将检*/当t - 记t点ζ检entζ上1 >= 设ζt隔ζ检ent ) {
       if( 是否已读config == 0 ) {/*2026年2月26日04时10分44*/
-        从configG量( ); 当pl./*c*/displayClientMessage( Component.translatable( "if亮Z烧怪.从configG量", 0 ), false );
+        从configG量( ); pl1./*c*/displayClientMessage( Component.translatable( "if亮Z烧怪.从configG量", 0 ), false );
         是否已读config = 1;
       }/*if*/
       ///当pl./*c*/displayClientMessage( Component.translatable( "forAGVEnt --> if亮Z烧怪", "" ), false );
-      玩家坐标 = 当pl.blockPosition( );
+      玩家坐标 = pl1.blockPosition( );
       //*vEntζ周围 = null; vEntζmonster = null; vEntζ敌 = null; vEntζmonsterS = 0;
       vEnt坐标ζ周围 = null; vEnt坐标ζmonster = null; vEnt坐标ζ敌 = null; vEnt坐标ζmonsterS = 0;
       for(/*检测玩家周围*/Entity 当ent : lev1.getEntities( null/*todo 2026年2月23日23时05分31__这书啥*/
@@ -133,7 +135,7 @@ public class ifLdZUkGy {
       记t点ζ检entζ上1 = 当t; ///是否将检测ent=0;
     } else {/*2026年2月24日03时42分23*/
       //*if(/*!时隔够=>将烧*/当t - 记t点ζ烧怪ζ上1 >= 设ζt隔ζ烧怪 ) {
-      //*  当pl./*c*/displayClientMessage( Component.translatable( "forVEnt --> if亮Z烧怪", "" ), false );
+      //*  pl1./*c*/displayClientMessage( Component.translatable( "forVEnt --> if亮Z烧怪", "" ), false );
       //*  for( int 一 =0; 一< vEntζmonsterS;一++ ) {
       //*    Entity 当ent =vEntζmonster.get(一);//*[一];
       //*    BlockPos 敌怪坐标 = 当ent.blockPosition( );
@@ -151,11 +153,26 @@ public class ifLdZUkGy {
     if(/*!时隔*/pl1.tickCount % 5 == 0 ) {/*https://docs.neoforged.net/docs/entities/#mobcategory */
       lev1 = pl1.level( ); Minecraft mc1 = Minecraft.getInstance( );
       LdJm_FhKy = mc1.level.getLightEngine( ).getLayerListener( LightLayer.BLOCK );
-      当pl = pl1;//!填
+      this.pl1 = pl1;//!填
       gVEnt_检测entAIf亮Z烧怪( );
     } else {/*非特时=>retu*/}/*if*/
   }/*void*/
 
+  public void PIEvζ右键点块ζ烧怪( PlayerInteractEvent.RightClickBlock 事 ) {
+    pl1 = 事.getEntity( );
+    /*?没用__不立即烧; 不烧; */
+    //*int 当plTi = pl1.tickCount;
+    //*当pl./*c*/displayClientMessage(Component.translatable("当pl.tickCount", pl1.tickCount), false);/*attentionBar=文本还是提示*/
+    //*/*立即彳亍,记录tick(保证不连彳亍)*/
+    //*if (/*时隔>~=>触*/是否u1减u2大同u3(当plTi, 右键烧のplayerTickζ上1, 设ζt隔ζ烧怪) == 1) {
+    //*if亮Z烧();
+    //*  //*if亮Z烧(设ζt隔ζ烧怪, rUの除余(当plTi, 设ζt隔ζ烧怪));//?竟不是`立即彳亍
+    //*  右键烧のplayerTickζ上1 = 当plTi;
+    //*}/*if*/
+    //*if(/*(当<上1)=>上1=0*/当plTi<右键烧のplayerTickζ上1){
+    //*  右键烧のplayerTickζ上1 = 0;
+    //*}/*if*/
+  }/*void*/
   /**/;//▬测试▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   /*-100=出伤了`mob会死*/
   public void 在0亮Z对怪出负1伤(/*入*/int 怪块亮级,/*出*/Entity ent1 ) {/*2026年2月23日22时19分16*/

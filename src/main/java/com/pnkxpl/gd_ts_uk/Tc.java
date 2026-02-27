@@ -14,7 +14,7 @@ import net.minecraft.world.phys.Vec3;
 
 /*名__Tc=跳*/
 public class Tc {
-  //!记录_设置
+  //!记录__设置
   //用来__tp后记y, 回y触发
   int 设ζ回定相yTp下 = 1, 回定相yTp下 = 0, 是否in跳 = 0, 是否in跳A已tp上 = 0, 是否已去更高 = 0;
   double tp后y = -1500;
@@ -107,11 +107,11 @@ public class Tc {
     Position 起坐标 = pl1.position( ); int 起t = pl1.tickCount;
     Vec3 vec3初速 = pl1.getDeltaMovement( );/*c空(无小括);*/ ///AABB bb = pl1.getBoundingBox( );
     double 初速y = vec3初速.y;
-    当pl./*c*/displayClientMessage( Component.translatable( "vec3初速y", 初速y ), false );
-    当pl./*c*/displayClientMessage( Component.translatable( "vec3初速x", vec3初速.x ), false );
+    pl1./*c*/displayClientMessage( Component.translatable( "vec3初速y", 初速y ), false );
+    pl1./*c*/displayClientMessage( Component.translatable( "vec3初速x", vec3初速.x ), false );
     double y = 0, x = 0, z = 0;/*相对坐标*/
     //!算程__(撞块)=>tp, (无结果)=>不彳亍
-    for( int t = 0 ; t < 100 ; t++ ) { // 最多模拟 5 秒
+    for( int t = 0 ; t < 100 ; t++ ) { //最多模拟 5 秒
       break;
     }/*for*/
   }/*void*/

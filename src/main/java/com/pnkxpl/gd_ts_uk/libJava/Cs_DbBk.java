@@ -32,7 +32,7 @@ import java.util.Vector;
 public class Cs_DbBk {
   public void 例子_onLivingJump( LivingEvent.LivingJumpEvent event ) {
     if( event.getEntity( ) instanceof Player player ) {
-      // 示例：仅潜行时取消垂直跳跃
+      //示例：仅潜行时取消垂直跳跃
       if( player.isCrouching( ) ) {
         player.setDeltaMovement( player.getDeltaMovement( ).x, 0.0D, player.getDeltaMovement( ).z );
       }

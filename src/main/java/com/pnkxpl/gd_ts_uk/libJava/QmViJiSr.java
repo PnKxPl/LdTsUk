@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import com.ibm.icu.impl.coll.UVector32;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Position;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundMoveEntityPacket;
 import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket;
@@ -45,13 +46,36 @@ public class QmViJiSr {
   }/*void*/
   /**/;//▬读取属性▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   public int 是否坐同( BlockPos bp1, BlockPos bp2 ) {/*2026年2月27日02时10分36*/
-    if( bp1==null || bp2==null ) {return -1;}/*if*/
-    if(bp1.getY() == bp2.getY() && bp1.getX() == bp2.getX() && bp1.getZ() == bp2.getZ() ) {
+    if( bp1 == null || bp2 == null ) { return -1; }/*if*/
+    if( bp1.getY( ) == bp2.getY( ) && bp1.getX( ) == bp2.getX( ) && bp1.getZ( ) == bp2.getZ( ) ) {
       return 1;
     }/*if*/
     return 0;
   }/*void*/
-
+  public int 是否差小1且大负1( int i1, double d1 ) {/*2026年2月27日09时09分22*/
+    //*if( i1 == null || d1 == null ) { return -1; }/*if*/
+    double 差; 差 = ( double ) i1 - d1;
+    if( 差 > -1 && 差 < 1 ) {
+      return 1;
+    }/*if*/
+    return 0;
+  }/*int*/
+  //再ifY,可以上下都能触
+  public int 是否坐xz差小1且大负1( BlockPos bp1, Position p1 ) {/*2026年2月27日09时01分06*/
+    if( bp1 == null || p1 == null ) { return -1; }/*if*/
+    ///double 差x = 0, 差z = 0; 差x = ( double ) bp1.getX( ) - p1.x( ); 差z = ( double ) bp1.getZ( ) - p1.z( );
+    ///if( 差x > -1 && 差x < 1 ) {
+    ///  if( 差z > -1 && 差z < 1 ) {
+    ///    return 1;
+    ///  }/*if*/
+    ///}/*if*/
+    if( 是否差小1且大负1( bp1.getX( ), p1.x( ) ) == 1 ) {
+      if( 是否差小1且大负1( bp1.getZ( ), p1.z( ) ) == 1 ) {
+        return 1;
+      }/*if*/
+    }/*if*/
+    return 0;
+  }/*int*/
 
 
 }/*class*/
