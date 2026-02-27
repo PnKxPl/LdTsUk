@@ -83,8 +83,9 @@ public class ifLdZUkGy {
   /*方__燃烧,if亮ZHurt*/
   public void if亮Z烧怪(/*入*/int 怪块亮级,/*出*/Entity ent1 ) {/*2026年2月21日18时11分01*/
     if(/*见光=>烧*/怪块亮级 > if亮大这Z烧怪 ) {
-      if(/*已着火=>删火*/ent1.isOnFire( ) ) { ent1.clearFire( ); }/*if*/
-      ent1.setRemainingFireTicks( 40 );/*连续`和重新=连续扣血,=不(点1下烧1下)*/ if(/*光级>1=>攻击*/怪块亮级 > 1 ) {
+      ///if(/*已着火=>删火*/ent1.isOnFire( ) ) { ent1.clearFire( ); }/*if*/
+      ent1.setRemainingFireTicks( 20 );/*连续`和重新=连续扣血,=不(点1下烧1下)*/
+      if(/*光级>1=>攻击*/怪块亮级 > 1 ) {
         if(/*得正u=>出伤*/怪块亮级 > 出伤ζ亮减 ) {
           {//!出伤
             ///*c*/当pl.displayClientMessage(Component.translatable("触hurt", ""), false);

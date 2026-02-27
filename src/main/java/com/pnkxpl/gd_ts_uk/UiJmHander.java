@@ -37,16 +37,19 @@ import static net.minecraft.world.InteractionHand.MAIN_HAND;
 
 /*现象__(右键,每tick)会烧两次; 先(右键)启动*/
 public class UiJmHander {
-  public static Config 设件 = new Config( );
+  /// public static Config 设件 = new Config( );
   public static QmViJiSr 前算 = new QmViJiSr( );
 
   public static com.pnkxpl.tc_ts_tpatc.Tc 跳 = new com.pnkxpl.tc_ts_tpatc.Tc( );
   public static ifLdZUkGy if亮Z烧怪 = new ifLdZUkGy( );
   public static FhKyZlKyQm 放块在块前 = new FhKyZlKyQm( );
   public static GlAttribute 改attr = new GlAttribute( );
+  public static if有饥饿值Z回血 if有饥饿值ZAddRegeneration = new if有饥饿值Z回血( );
+
+
   //!读件
   /*!记录__设置*/
-  int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1, 设ζ启ζ改attr = 1;
+  int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1, 设ζ启ζ改attr = 1, 设ζ启ζif有饥饿值Z回血 = 1;
   //!彳亍中
   /*!记录__设置*/
 
@@ -59,10 +62,11 @@ public class UiJmHander {
   public UiJmHander( ) {
   }
   public void 从configG量( ) { /*2026年2月27日17时40分34*/
-    设ζ启ζif亮Z烧怪 = 设件.设ζ启ζif亮Z烧怪.get( );
-    设ζ启ζ跳同tpA跳 = 设件.设ζ启ζ跳同tpA跳.get( );
-    设ζ启ζ放块在块前 = 设件.设ζ启ζ放块在块前.get( );
-    设ζ启ζ改attr = 设件.设ζ启ζattribute.get( );
+    设ζ启ζif亮Z烧怪 = Config.设ζ启ζif亮Z烧怪.get( );
+    设ζ启ζ跳同tpA跳 = Config.设ζ启ζ跳同tpA跳.get( );
+    设ζ启ζ放块在块前 = Config.设ζ启ζ放块在块前.get( );
+    设ζ启ζ改attr = Config.设ζ启ζattribute.get( );
+    设ζ启ζif有饥饿值Z回血 = Config.设ζ启ζif有饥饿值Z回血.get( );
   }/*void*/
   /*
   PlayerInteractEvent$    EntityInteract	玩家交互事件－实体交互
@@ -94,6 +98,9 @@ public class UiJmHander {
     }/*if*/
     if( 设ζ启ζ改attr == 1 ) {
       改attr.读A改( pl1 );
+    }/*if*/
+    if( 设ζ启ζif有饥饿值Z回血 == 1 ) {
+      if有饥饿值ZAddRegeneration.读A改(pl1);
     }/*if*/
 
   }/*void*/
