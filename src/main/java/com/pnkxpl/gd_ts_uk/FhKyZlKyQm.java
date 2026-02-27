@@ -1,6 +1,7 @@
 package com.pnkxpl.tc_ts_tpatc;
 
 import com.ibm.icu.impl.coll.UVector32;
+import com.pnkxpl.gd_ts_uk.core.Config;
 import com.pnkxpl.gd_ts_uk.libJava.QmViJiSr;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -34,7 +35,10 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 public class FhKyZlKyQm {
   public static QmViJiSr 前算 = new QmViJiSr( );
   //!记录__设置
-
+  static int 是否放前 = 0;
+  static int 是否放后 = 0;
+  static int 是否放左 = 0;
+  static int 是否放右 = 0;
   //!记录
   public int 是否刚if放块在块前A将if补块 = 0;//用来__再if`补块
   public BlockPos bpos右键事块_在这if放块在块前 = null;//bpos当 =bpos刚if放块在块前 =bpos右键事块_在这if放块在块前
@@ -43,6 +47,17 @@ public class FhKyZlKyQm {
   Position pos当pl = null;
   int 记tζsetNoGravity = -1500;
   public FhKyZlKyQm( ) { }
+  private void 从uG放块在块の向( int u ) {
+    if( u == 0 ) { 是否放前 = 1; 是否放后 = 1; 是否放左 = 1; 是否放右 = 1; }/*if*/ else if( u == 1 ) { 是否放前 = 1; }/*if*/ else if( u == 2 ) {
+      是否放后 = 1;
+    }/*if*/ else if( u == 3 ) { 是否放左 = 1; }/*if*/ else if( u == 4 ) { 是否放右 = 1; }/*if*/
+  }/*void*/
+  public void 从configG量( ) {
+    ///Config.设ζ多选ζ放块在块の向.get().size()
+    for( int i1 : Config.设ζ多选ζ放块在块の向.get( ) ) {
+      从uG放块在块の向( i1 );
+    }/*for*/
+  }/*void*/
   /**/;//!从`豆包▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   public static BlockPos r玩家视线指の块坐( Player pl1 ) {/*2026年2月27日01时33分57*/
     BlockPos targetPos = null;
@@ -72,32 +87,46 @@ public class FhKyZlKyQm {
     }/*if*/
     return 0;
   }/*int*/
-  public static void 据pl朝向主手放块( Player pl1, BlockPos bpos ) {
+  public static void 据pl朝向主手放块( Player pl1, BlockPos bpos ) {  /*2026年2月27日18时11分13*/
     ///pl1./*c*/displayClientMessage( Component.translatable( "放块在块前", "" ), true );
     Direction pl朝向 = pl1.getDirection( );//pl朝向.getStepX()/*=0,1,-1*/ pl朝向.getStepY( )/*=0*/ pl朝向.getStepZ()
     BlockPos 放块坐 = null;
     if( pl朝向.getStepX( ) == -1 ) {//!左=西
-      放块坐 = bpos.west( ); pl主手放块( pl1, 放块坐 );
+      if( 是否放前 == 1 ) { 放块坐 = bpos.west( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+      if( 是否放后 == 1 ) { 放块坐 = bpos.east( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+      if( 是否放左 == 1 ) { 放块坐 = bpos.south( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+      if( 是否放右 == 1 ) { 放块坐 = bpos.north( ); pl主手放块( pl1, 放块坐 ); }/*if*/
     } else if( pl朝向.getStepX( ) == 1 ) {//!右=东
-      放块坐 = bpos.east( ); pl主手放块( pl1, 放块坐 );
+      if( 是否放前 == 1 ) { 放块坐 = bpos.east( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+      if( 是否放后 == 1 ) { 放块坐 = bpos.west( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+      if( 是否放左 == 1 ) { 放块坐 = bpos.north( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+      if( 是否放右 == 1 ) { 放块坐 = bpos.south( ); pl主手放块( pl1, 放块坐 ); }/*if*/
     } else if( pl朝向.getStepX( ) == 0 ) {
       if( pl朝向.getStepZ( ) == 1 ) {//!南
+        if( 是否放前 == 1 ) { 放块坐 = bpos.south( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+        if( 是否放后 == 1 ) { 放块坐 = bpos.north( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+        if( 是否放左 == 1 ) { 放块坐 = bpos.east( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+        if( 是否放右 == 1 ) { 放块坐 = bpos.west( ); pl主手放块( pl1, 放块坐 ); }/*if*/
         放块坐 = bpos.south( ); pl主手放块( pl1, 放块坐 );
       } else if( pl朝向.getStepZ( ) == -1 ) {//!北
+        if( 是否放前 == 1 ) { 放块坐 = bpos.north( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+        if( 是否放后 == 1 ) { 放块坐 = bpos.south( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+        if( 是否放左 == 1 ) { 放块坐 = bpos.west( ); pl主手放块( pl1, 放块坐 ); }/*if*/
+        if( 是否放右 == 1 ) { 放块坐 = bpos.east( ); pl主手放块( pl1, 放块坐 ); }/*if*/
         放块坐 = bpos.north( ); pl主手放块( pl1, 放块坐 );
       }/*if*/
     }/*if*/
   }/*void*/
   //打在这=(c保存,闪退)  --当pl  (双击是点,点,点点)
   public void PIEvζ右键点块ζ放块在块前(/*1*/ PlayerInteractEvent.RightClickBlock 事 ) {/*2026年2月27日09时22分03*/
+    从configG量( );
     ///事.getLevel()
     //块是否能在该位置放置
     //*Block b1; b1.canSurvive( b1.defaultBlockState( ), 事.getLevel(), 事.getPos( ) );
     Player pl1 = 事.getEntity( );
     Position pl1Pos = pl1.position( );//足坐 //todo 2026年2月27日09时17分50__和身高有关吗？
-    pl1./*c*/displayClientMessage( Component.translatable( "co1", pl1Pos.y( ) ), false );
-    pl1./*c*/displayClientMessage( Component.translatable( "co1", 事.getPos( ).getY( ) ), false );
-    if( (前算.是否差小1且大负1( 事.getPos( ).getY( ), pl1Pos.y( ) - 1 ) == 1)|| (前算.是否差小1且大负1( 事.getPos( ).getY( ), pl1Pos.y( ) +2 ) == 1) ) {//!y,if下上
+    ///pl1./*c*/displayClientMessage( Component.translatable( "co1", pl1Pos.y( ) ), false ); pl1./*c*/displayClientMessage( Component.translatable( "co1", 事.getPos( ).getY( ) ), false );
+    if( ( 前算.是否差小1且大负1( 事.getPos( ).getY( ), pl1Pos.y( ) - 1 ) == 1 ) || ( 前算.是否差小1且大负1( 事.getPos( ).getY( ), pl1Pos.y( ) + 2 ) == 1 ) ) {//!y,if下上
       if( 前算.是否坐xz差小1且大负1( 事.getPos( ), pl1Pos ) == 1 ) {//!x,z
         据pl朝向主手放块( pl1, 事.getPos( ) );
       }/*if*/

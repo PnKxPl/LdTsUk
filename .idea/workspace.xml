@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026n2y27r__+放块在块前">
+    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="2026年2月27日09时23分53__新版の放块在块前">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/Tc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/Tc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/WanderingTraderExpressDelivery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/ifLdZUkGy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/ifLdZUkGy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/Cs_DbBk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/Cs_DbBk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/QmViJiSr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/QmViJiSr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/wandering_trader_express_delivery/lang/zh_cn.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,26 +96,37 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.41/5e406ecb879620a6773442ac8f6913593a3e5713/loader-4.0.41-sources.jar!/net/neoforged/fml/ModContainer.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.41/5e406ecb879620a6773442ac8f6913593a3e5713/loader-4.0.41-sources.jar!/net/neoforged/fml/common/Mod.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged/bus/8.0.5/aad64cf0f455585a518c54d7aecf8d656aff912e/bus-8.0.5-sources.jar!/net/neoforged/bus/api/Event.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged/bus/8.0.5/aad64cf0f455585a518c54d7aecf8d656aff912e/bus-8.0.5-sources.jar!/net/neoforged/bus/api/IEventBus.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/client/gui/Gui.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/core/BlockPos.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot/lib/src.zip!/java.base/java/lang/Object.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot/lib/src.zip!/java.base/java/util/List.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot/lib/src.zip!/jdk.javadoc/jdk/javadoc/internal/doclets/formats/html/markup/HtmlStyle.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.41/3aebc81b9347fa87bb629ffaed20276f2a4c944e/loader-4.0.41.jar!/net/neoforged/fml/common/Mod.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.41/5e406ecb879620a6773442ac8f6913593a3e5713/loader-4.0.41-sources.jar!/net/neoforged/fml/ModContainer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.41/5e406ecb879620a6773442ac8f6913593a3e5713/loader-4.0.41-sources.jar!/net/neoforged/fml/common/Mod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged/bus/8.0.5/aad64cf0f455585a518c54d7aecf8d656aff912e/bus-8.0.5-sources.jar!/net/neoforged/bus/api/Event.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.neoforged/bus/8.0.5/aad64cf0f455585a518c54d7aecf8d656aff912e/bus-8.0.5-sources.jar!/net/neoforged/bus/api/IEventBus.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/client/gui/Gui.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/core/BlockPos.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/core/Direction.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/core/Position.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/network/chat/Component.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/damagesource/DamageSources.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/entity/Entity.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/entity/MobCategory.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/level/EntityGetter.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/level/Level.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/client/event/RenderGuiEvent.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/common/ModConfigSpec.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/common/NeoForge.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/living/LivingDamageEvent.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/living/LivingEvent.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/player/PlayerEvent.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/InteractionHand.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/damagesource/DamageSources.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/entity/Entity.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/entity/LivingEntity.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/entity/MobCategory.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/entity/Pose.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/level/EntityGetter.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/level/Level.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/level/block/state/properties/BlockStateProperties.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/minecraft/world/phys/Vec3.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/client/event/RenderGuiEvent.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/common/ModConfigSpec.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/common/NeoForge.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/living/LivingDamageEvent.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/living/LivingEvent.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/player/PlayerEvent.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.200-merged.jar!/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -157,7 +164,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "editor.preferences.folding",
     "应用程序.Client.executor": "Coverage",
     "应用程序.Data.executor": "Run"
   }
@@ -167,7 +174,7 @@
       <recent name="com.ddd.wanderingtraderexpressdelivery" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="Gradle.ld_ts_uk__DaZi [jar]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ld_ts_uk__DaZi.main" />
@@ -433,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772049870507</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2026年2月27日09时23分53__新版の放块在块前">
+      <option name="closed" value="true" />
+      <created>1772155447516</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1772155447516</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +479,8 @@
     <MESSAGE value="2026n2y25r20u20f46" />
     <MESSAGE value="2026年2月26日01时26分58" />
     <MESSAGE value="移`读件()" />
-    <option name="LAST_COMMIT_MESSAGE" value="移`读件()" />
+    <MESSAGE value="2026年2月27日09时23分53__新版の放块在块前" />
+    <option name="LAST_COMMIT_MESSAGE" value="2026年2月27日09时23分53__新版の放块在块前" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

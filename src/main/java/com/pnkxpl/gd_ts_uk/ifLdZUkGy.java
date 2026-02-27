@@ -34,7 +34,6 @@ public class ifLdZUkGy {
   public static Config 设件 = new Config( );
   //!从设件
   /*!记录__设置*/
-  int 设ζ启=1;
   int if亮大这Z烧怪 = 6, 出伤ζ亮减 = 10/*7__6(-1),7(开`出伤)*/, 出伤乘 = 4;
   /*名__t隔=tick隔*//*300=15s,20=1s*/
   int 在首几t不彳亍 = 15, 设ζt隔ζ检ent = 20, 设ζt隔ζ烧怪 = 20;
@@ -65,14 +64,14 @@ public class ifLdZUkGy {
   public void 从configG量( ) {/*2026年2月25日03时16分44*/
     ///出伤ζ亮减 = Config.r出伤ζ亮减( ); 出伤乘 = Config.r出伤乘( );
     ///出伤ζ亮减 = 设件.r出伤ζ亮减( ); 出伤乘 = 设件.r出伤乘( );
-    设ζ启 = 设件.设ζ启ζif亮Z烧怪.get( );
-    在首几t不彳亍 = 设件.在首几t不彳亍.get( );
-    if亮大这Z烧怪 = 设件.if亮大这Z烧怪.get( );
-    出伤ζ亮减 = 设件.出伤ζ亮减.get( ); 出伤乘 = 设件.出伤乘.get( );
-    设ζt隔ζ检ent = 设件.设ζt隔ζ检ent.get( );
-    检rX = 设件.检rX.get( );
-    检rZ = 设件.检rZ.get( );
-    检rY = 设件.检rY.get( );
+    ///在首几t不彳亍 = 设件.在首几t不彳亍.get( );
+    if亮大这Z烧怪 = 设件.if亮大这Z烧怪__出伤ζ亮减__出伤.get( ).get( 0 );
+    出伤ζ亮减 = 设件.if亮大这Z烧怪__出伤ζ亮减__出伤.get( ).get( 1 );
+    出伤乘 = 设件.if亮大这Z烧怪__出伤ζ亮减__出伤.get( ).get( 2 );
+    设ζt隔ζ检ent = 设件.设ζt隔ζ检ent__检rY__检rX__检rZ.get( ).get( 0 );
+    检rX =设件.设ζt隔ζ检ent__检rY__检rX__检rZ.get( ).get( 0 );
+    检rZ =设件.设ζt隔ζ检ent__检rY__检rX__检rZ.get( ).get( 0 );
+    检rY =设件.设ζt隔ζ检ent__检rY__检rX__检rZ.get( ).get( 0 );
     ///当pl./*c*/displayClientMessage( Component.translatable( "从configG量 <--出伤乘", 出伤乘 ), false );
 
   }/*void*/

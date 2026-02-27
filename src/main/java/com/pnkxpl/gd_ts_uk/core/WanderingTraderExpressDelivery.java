@@ -46,7 +46,9 @@ public class WanderingTraderExpressDelivery {
     注册事件( modEventBus );
     //注册配置
     {//!读件
-      modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC );/*无这=进存闪退, 可能(不)是读件*/
+      modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC1 );/*无这=进存闪退, 可能(不)是读件*/
+     //*modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC2 );
+     //*modContainer.registerConfig( ModConfig.Type.COMMON, Config.SPEC3 );
       //!从configG量()不能在这
     } ;
   }

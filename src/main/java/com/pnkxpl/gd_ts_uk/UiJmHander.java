@@ -45,23 +45,24 @@ public class UiJmHander {
   public static com.pnkxpl.tc_ts_tpatc.FhKyZlKyQm 放块在块前 = new com.pnkxpl.tc_ts_tpatc.FhKyZlKyQm( );
   //!读件
   /*!记录__设置*/
-
+  int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1;
   //!彳亍中
   /*!记录__设置*/
 
   /*!记录*/
-  int 当t=0;
+  int 当t = 0;
   Player pl1 = null;
   ItemStack istack主手 = null;
   int 主手物u = 0, 主手物uζ上1 = 0;//主手物uζ放块前=主手物uζ上1,主手物uζ放块后=主手物u
   /*不需`是否将检测ent`是否将烧*/
   public UiJmHander( ) {
   }
-  public void 从configG量( ) {
+  public void 从configG量( ) { /*2026年2月27日17时40分34*/
+    设ζ启ζif亮Z烧怪 = 设件.设ζ启ζif亮Z烧怪.get( );
+    设ζ启ζ跳同tpA跳 = 设件.设ζ启ζ跳同tpA跳.get( );
+    设ζ启ζ放块在块前 = 设件.设ζ启ζ放块在块前.get( );
 
   }/*void*/
-
-
   /*
   PlayerInteractEvent$    EntityInteract	玩家交互事件－实体交互
   PlayerInteractEvent$    EntityInteractSpecific	玩家交互事件－具体的实体交互	当玩家右键实体，双方都会触发
@@ -83,12 +84,13 @@ public class UiJmHander {
       当t = pl1.tickCount;
       istack主手 = pl1.getItemInHand( MAIN_HAND );//todo 2026年2月27日07时15分50__每t记录`会在放块后吗
     } ;
-
-    if亮Z烧怪.if时隔Z_if亮Z烧( pl1 );
-    {//!跳
+    if( 设ζ启ζif亮Z烧怪 == 1 ) {
+      if亮Z烧怪.if时隔Z_if亮Z烧( pl1 );
+    }/*if*/
+    if( 设ζ启ζ跳同tpA跳 == 1 ) {//!跳
       跳.ifY大yZ改是否已去更高( pl1 );
       ///跳.回定相yTp下( pl1, -1 );
-    } ;
+    }/*if*/
   }/*void*/
   /*用来__g(pl1),其他的没有做到*/
   //*@EventBusSubscriber(modid = MODID )
@@ -98,10 +100,10 @@ public class UiJmHander {
       //*主手物uζ上1 = 主手物u;
       主手物u = istack主手.getCount( );
     } ;
-    {//!放块在块前
-      pl1./*c*/displayClientMessage( Component.translatable( "主手物uζ放块前", 主手物u ), false );
+    if( 设ζ启ζ放块在块前 == 1 ) {//!放块在块前
+      ///pl1./*c*/displayClientMessage( Component.translatable( "主手物uζ放块前", 主手物u ), false );
       放块在块前.PIEvζ右键点块ζ放块在块前( 事 );
-    } ;
+    }/*if*/
   }/*void*/
 
   @SubscribeEvent public void PIEvζent交互( PlayerInteractEvent.EntityInteract event ) {/*2026年2月21日07时26分33*/
