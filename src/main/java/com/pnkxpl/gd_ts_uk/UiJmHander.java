@@ -5,6 +5,7 @@ import com.ibm.icu.impl.coll.UVector32;
 import com.pnkxpl.gd_ts_uk.core.Config;
 import com.pnkxpl.gd_ts_uk.libJava.QmViJiSr;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -22,6 +23,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ComputeFovModifierEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent;
@@ -49,7 +51,9 @@ public class UiJmHander {
 
   //!读件
   /*!记录__设置*/
+  int  tζ读confζ上1=-1500, 设ζ读confζt隔=20;
   int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1, 设ζ启ζ改attr = 1, 设ζ启ζif有饥饿值Z回血 = 1;
+  float FovModifier=0;
   //!彳亍中
   /*!记录__设置*/
 
@@ -67,6 +71,7 @@ public class UiJmHander {
     设ζ启ζ放块在块前 = Config.设ζ启ζ放块在块前.get( );
     设ζ启ζ改attr = Config.设ζ启ζattribute.get( );
     设ζ启ζif有饥饿值Z回血 = Config.设ζ启ζif有饥饿值Z回血.get( );
+    FovModifier      =  Float.parseFloat(Config.设ζFovModifier.get( ).get( 0 ));
   }/*void*/
   /*
   PlayerInteractEvent$    EntityInteract	玩家交互事件－实体交互
@@ -83,6 +88,10 @@ public class UiJmHander {
   @SubscribeEvent public void onTick( ServerTickEvent.Post 事 ) {/*2026年2月21日06时17分58*/
     ///if(/*!t隔,推迟彳亍*/pl1.tickCount > 在首几t不彳亍 ) {/*https://docs.neoforged.net/docs/entities/#mobcategory */}/*if*/
     if( pl1 == null ) { return; }/*if*/
+    if( pl1.tickCount - tζ读confζ上1 >= 设ζ读confζt隔 ) {//!时隔够=>读conf
+      tζ读confζ上1 = pl1.tickCount;
+      从configG量( );
+    }/*if*/
     /*?2026年2月22日01时19分43__原来是c,  2026年2月24日04时23分57__c需player*/
     ///pl1./*c*/displayClientMessage(Component.translatable("触tick", ""), false);
     {//!记
@@ -100,7 +109,7 @@ public class UiJmHander {
       改attr.读A改( pl1 );
     }/*if*/
     if( 设ζ启ζif有饥饿值Z回血 == 1 ) {
-      if有饥饿值ZAddRegeneration.读A改(pl1);
+      if有饥饿值ZAddRegeneration.读A改( pl1 );
     }/*if*/
 
   }/*void*/
@@ -141,6 +150,8 @@ public class UiJmHander {
     Entity 当ent = 事.getEntity( ); if( pl1 != 当ent ) { return; }/*if*/
     跳.s无gravATp到上( pl1, 1 );
   }/*void*/
-
+  @SubscribeEvent public void onComputeFovModifier( ComputeFovModifierEvent 事 ) {
+    事.setNewFovModifier( FovModifier ); //70*0.57≈40，实现缩放效果
+  }
 
 }/*class*/

@@ -51,12 +51,17 @@ public class Config {
   //*    .defineList( "值( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( 100.1, 0.15, 0.2, -1.1, 1.1 ),
   //*        o -> o instanceof Double );
   public static final ModConfigSpec.ConfigValue< ? extends List< ? extends String > > 设ζattribute = bui读设件ζif亮Z烧怪
-      .defineList( "值( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( "100", "0.15", "0.4", "-1", "1" ),
+      .defineList( "值( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( "100", "0.3", "0.4", "-1", "1" ),
           o -> o instanceof String );
 
   public static final ModConfigSpec.Builder 分段ζif有饥饿值Z回血 = bui读设件ζif亮Z烧怪.pop( ).push( "if有饥饿值Z回血" );
   public static final ModConfigSpec.IntValue 设ζ启ζif有饥饿值Z回血 = bui读设件ζif亮Z烧怪.defineInRange( "设ζ启", 1, 0, 1 );
   public static final ModConfigSpec.IntValue 设ζif有饥饿值Z回血ζt隔 = bui读设件ζif亮Z烧怪.defineInRange( "t隔", 100, 0, 15000 );
+
+  public static final ModConfigSpec.Builder 分段ζ设置 = bui读设件ζif亮Z烧怪.pop( ).push( "" );
+  public static final ModConfigSpec.ConfigValue< ? extends List< ? extends String > > 设ζFovModifier = bui读设件ζif亮Z烧怪
+      .defineList( "FovModifier", Arrays.asList( "1" ),
+          o -> o instanceof String );
 
   public static final ModConfigSpec SPEC1 = bui读设件ζif亮Z烧怪.build( );/*上移=进存闪退*/
   //*public static final ModConfigSpec SPEC2 = bui读设件ζ跳同tpA跳.build( );
