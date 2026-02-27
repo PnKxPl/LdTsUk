@@ -42,10 +42,11 @@ public class UiJmHander {
 
   public static com.pnkxpl.tc_ts_tpatc.Tc 跳 = new com.pnkxpl.tc_ts_tpatc.Tc( );
   public static ifLdZUkGy if亮Z烧怪 = new ifLdZUkGy( );
-  public static com.pnkxpl.tc_ts_tpatc.FhKyZlKyQm 放块在块前 = new com.pnkxpl.tc_ts_tpatc.FhKyZlKyQm( );
+  public static FhKyZlKyQm 放块在块前 = new FhKyZlKyQm( );
+  public static GlAttribute 改attr = new GlAttribute( );
   //!读件
   /*!记录__设置*/
-  int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1;
+  int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1, 设ζ启ζ改attr = 1;
   //!彳亍中
   /*!记录__设置*/
 
@@ -61,7 +62,7 @@ public class UiJmHander {
     设ζ启ζif亮Z烧怪 = 设件.设ζ启ζif亮Z烧怪.get( );
     设ζ启ζ跳同tpA跳 = 设件.设ζ启ζ跳同tpA跳.get( );
     设ζ启ζ放块在块前 = 设件.设ζ启ζ放块在块前.get( );
-
+    设ζ启ζ改attr = 设件.设ζ启ζattribute.get( );
   }/*void*/
   /*
   PlayerInteractEvent$    EntityInteract	玩家交互事件－实体交互
@@ -85,12 +86,16 @@ public class UiJmHander {
       istack主手 = pl1.getItemInHand( MAIN_HAND );//todo 2026年2月27日07时15分50__每t记录`会在放块后吗
     } ;
     if( 设ζ启ζif亮Z烧怪 == 1 ) {
-      if亮Z烧怪.if时隔Z_if亮Z烧( pl1 );
+      if亮Z烧怪.gVEnt_检测entAIf亮Z烧怪( pl1 );
     }/*if*/
-    if( 设ζ启ζ跳同tpA跳 == 1 ) {//!跳
+    if( 设ζ启ζ跳同tpA跳 == 1 ) {
       跳.ifY大yZ改是否已去更高( pl1 );
       ///跳.回定相yTp下( pl1, -1 );
     }/*if*/
+    if( 设ζ启ζ改attr == 1 ) {
+      改attr.读A改( pl1 );
+    }/*if*/
+
   }/*void*/
   /*用来__g(pl1),其他的没有做到*/
   //*@EventBusSubscriber(modid = MODID )

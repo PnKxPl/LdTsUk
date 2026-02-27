@@ -1,4 +1,4 @@
-package com.pnkxpl.tc_ts_tpatc;
+package com.pnkxpl.gd_ts_uk;
 
 import com.ibm.icu.impl.coll.UVector32;
 import com.pnkxpl.gd_ts_uk.core.Config;

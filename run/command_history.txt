@@ -1,4 +1,3 @@
-/summon minecraft:zombie
 /summon minecraft:zombie.
 /summon minecraft:zombie
 /
@@ -48,3 +47,4 @@
 /tp 0 100 ~
 /give @a minecraft:creeper_spawn_egg 1000
 /give @a minecraft:acacia_planks 1000
+/kill
