@@ -40,13 +40,15 @@ public class GlAttribute {
   static int 设ζ启ζhp = 0;
   static int 设ζ启ζwalkSpeed = 0;
   static int 设ζ启ζflySpeed = 0;
+  static int 设ζ启ζstepHight = 0;
   static int 设ζ启ζattackSpeed = 0;
   static int 设ζ启ζsweep = 0;
   static int 一hp = 0;
   static int 一walkSpeed = 1;
   static int 一flySpeed = 2;
-  static int 一attackSpeed = 3;
-  static int 一sweep = 4;
+  static int 一stepHight = 3;
+  static int 一attackSpeed = 4;
+  static int 一sweep = 5;
 
   //!记录
   static int tζ上1 = -1500;
@@ -56,6 +58,7 @@ public class GlAttribute {
     设ζ启ζhp = Config.设ζattributeζ启.get( ).get( 一hp );
     设ζ启ζwalkSpeed = Config.设ζattributeζ启.get( ).get( 一walkSpeed );
     设ζ启ζflySpeed = Config.设ζattributeζ启.get( ).get( 一flySpeed );
+    设ζ启ζstepHight  = Config.设ζattributeζ启.get( ).get( 一stepHight );
     设ζ启ζattackSpeed = Config.设ζattributeζ启.get( ).get( 一attackSpeed );
     设ζ启ζsweep = Config.设ζattributeζ启.get( ).get( 一sweep );
   }/*void*/
@@ -67,8 +70,9 @@ public class GlAttribute {
       ///pl1./*c*/displayClientMessage( Component.translatable( "co1", Double.valueOf( Config.设ζattribute.get( ).get( 一hp ) ) ), false );
       if(/*启=>改*/设ζ启ζhp == 1 ) { pl1.getAttribute( Attributes.MAX_HEALTH ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一hp ) ) ); }/*if*/
       if(/*启=>改*/设ζ启ζwalkSpeed == 1 ) { pl1.getAttribute( Attributes.MOVEMENT_SPEED ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一walkSpeed ) ) ); }/*if*/
-      if(/*启=>改*/设ζ启ζflySpeed==1){pl1.getAbilities(  ).setFlyingSpeed(Float.parseFloat(Config.设ζattribute.get().get(一flySpeed) ) );}/*if*/
-      if(/*启=>改*/设ζ启ζattackSpeed == 1 ) { pl1.getAttribute( Attributes.ATTACK_SPEED  ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一attackSpeed ) ) ); }/*if*/
+      if(/*启=>改*/设ζ启ζflySpeed == 1 ) { pl1.getAbilities( ).setFlyingSpeed( Float.parseFloat( Config.设ζattribute.get( ).get( 一flySpeed ) ) ); }/*if*/
+      if(/*启=>改*/设ζ启ζstepHight == 1 ) { pl1.getAttribute( Attributes.STEP_HEIGHT ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一stepHight  ) ) ); }/*if*/
+      if(/*启=>改*/设ζ启ζattackSpeed == 1 ) { pl1.getAttribute( Attributes.ATTACK_SPEED ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一attackSpeed ) ) ); }/*if*/
       if(/*启=>改*/设ζ启ζsweep == 1 ) { pl1.getAttribute( Attributes.SWEEPING_DAMAGE_RATIO ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一sweep ) ) ); }/*if*/
 
     } /*if*/

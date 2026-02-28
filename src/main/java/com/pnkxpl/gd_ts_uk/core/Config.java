@@ -41,21 +41,21 @@ public class Config {
       .defineList( "( 5元 )", Arrays.asList( 1, 1, 1, 1, 1 ),
           o -> o instanceof Integer );
   public static final ModConfigSpec.ConfigValue< ? extends List< ? extends String > > 设ζif坐差小这Z触 = bui读设件ζif亮Z烧怪
-      .defineList( "( if坐差小这Z触ζy, if坐差小这Z触ζxz )", Arrays.asList( "1", "0.5" ),
+      .defineList( "( if坐差小这Z触ζy, if坐差小这Z触ζxz )", Arrays.asList( "1.2", "1.2" ),
           o -> o instanceof String );/*2026年3月1日00时17分09*/
 
   public static final ModConfigSpec.Builder 分段ζattribute = bui读设件ζif亮Z烧怪.pop( ).push( "attribute" );
   public static final ModConfigSpec.IntValue 设ζ启ζattribute = bui读设件ζif亮Z烧怪.defineInRange( "设ζ启", 1, 0, 1 );
   public static final ModConfigSpec.IntValue 设ζattributeζt隔 = bui读设件ζif亮Z烧怪.defineInRange( "t隔", 50, 0, 15000 );
   public static final ModConfigSpec.ConfigValue< List< ? extends Integer > > 设ζattributeζ启 = bui读设件ζif亮Z烧怪
-      .defineList( "启( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( 1, 1, 1, 0, 1 ),//*Arrays.asList( 1,1,1,1,1),
+      .defineList( "启( hp, walkSpeed, flySpeed, stepHight, 5.attackSpeed, sweep )", Arrays.asList( 1, 1, 1,1, 0, 1 ),//*Arrays.asList( 1,1,1,1,1),
           o -> o instanceof Integer );
   //!方注__(Number o -> o instanceof( (Integer)是整u /(Double)必须<1) )); 不能(( double )Number)
   //*public static final ModConfigSpec.ConfigValue< ? extends List< ? extends Number > > 设ζattribute = bui读设件ζif亮Z烧怪
   //*    .defineList( "值( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( 100.1, 0.15, 0.2, -1.1, 1.1 ),
   //*        o -> o instanceof Double );
   public static final ModConfigSpec.ConfigValue< ? extends List< ? extends String > > 设ζattribute = bui读设件ζif亮Z烧怪
-      .defineList( "值( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( "100", "0.2", "0.2", "4", "1" ),
+      .defineList( "值( hp, walkSpeed, flySpeed, stepHight, 5.attackSpeed, sweep )", Arrays.asList( "100", "0.2", "0.2", "1.2", "4", "1" ),
           o -> o instanceof String );
 
   public static final ModConfigSpec.Builder 分段ζif有饥饿值Z回血 = bui读设件ζif亮Z烧怪.pop( ).push( "if有饥饿值Z回血" );
