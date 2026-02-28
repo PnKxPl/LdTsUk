@@ -64,11 +64,12 @@ public class GlAttribute {
       tζ上1 = pl1.tickCount;
       从configG量( );
       ///pl1./*c*/displayClientMessage( Component.translatable( "co1", Double.valueOf( Config.设ζattribute.get( ).get( 一hp ) ) ), false );
+      ///pl1./*c*/displayClientMessage( Component.translatable( "co1", Double.valueOf( Config.设ζattribute.get( ).get( 一hp ) ) ), false );
       if(/*启=>改*/设ζ启ζhp == 1 ) { pl1.getAttribute( Attributes.MAX_HEALTH ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一hp ) ) ); }/*if*/
       if(/*启=>改*/设ζ启ζwalkSpeed == 1 ) { pl1.getAttribute( Attributes.MOVEMENT_SPEED ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一walkSpeed ) ) ); }/*if*/
       if(/*启=>改*/设ζ启ζflySpeed==1){pl1.getAbilities(  ).setFlyingSpeed(Float.parseFloat(Config.设ζattribute.get().get(一flySpeed) ) );}/*if*/
-      if(/*启=>改*/设ζ启ζattackSpeed == 1 ) { pl1.getAttribute( Attributes.SWEEPING_DAMAGE_RATIO ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一attackSpeed ) ) ); }/*if*/
-      if(/*启=>改*/设ζ启ζsweep == 1 ) { pl1.getAttribute( Attributes.ATTACK_SPEED ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一sweep ) ) ); }/*if*/
+      if(/*启=>改*/设ζ启ζattackSpeed == 1 ) { pl1.getAttribute( Attributes.ATTACK_SPEED  ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一attackSpeed ) ) ); }/*if*/
+      if(/*启=>改*/设ζ启ζsweep == 1 ) { pl1.getAttribute( Attributes.SWEEPING_DAMAGE_RATIO ).setBaseValue( Double.valueOf( Config.设ζattribute.get( ).get( 一sweep ) ) ); }/*if*/
 
     } /*if*/
   }/*void*/

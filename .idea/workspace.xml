@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="5个功能!">
+    <list default="true" id="6dc06001-35c2-4cfd-ad8a-df5eac1962ca" name="更改" comment="6个功能!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/UiJmHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/FhKyZlKyQm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/GlAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/GlAttribute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/core/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/QmViJiSr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pnkxpl/gd_ts_uk/libJava/QmViJiSr.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -483,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772221565918</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="6个功能!">
+      <option name="closed" value="true" />
+      <created>1772223797830</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1772223797830</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,7 +530,8 @@
     <MESSAGE value="3个功能" />
     <MESSAGE value="4个功能!" />
     <MESSAGE value="5个功能!" />
-    <option name="LAST_COMMIT_MESSAGE" value="5个功能!" />
+    <MESSAGE value="6个功能!" />
+    <option name="LAST_COMMIT_MESSAGE" value="6个功能!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

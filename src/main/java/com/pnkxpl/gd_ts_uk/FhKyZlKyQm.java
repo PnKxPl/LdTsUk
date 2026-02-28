@@ -39,6 +39,8 @@ public class FhKyZlKyQm {
   static int 是否放后 = 0;
   static int 是否放左 = 0;
   static int 是否放右 = 0;
+  static double if坐差小这Z触ζy = 0.5;
+  static double if坐差小这Z触ζxz  = 0.5; 
   //!记录
   public int 是否刚if放块在块前A将if补块 = 0;//用来__再if`补块
   public BlockPos bpos右键事块_在这if放块在块前 = null;//bpos当 =bpos刚if放块在块前 =bpos右键事块_在这if放块在块前
@@ -52,11 +54,13 @@ public class FhKyZlKyQm {
       是否放后 = 1;
     }/*if*/ else if( u == 3 ) { 是否放左 = 1; }/*if*/ else if( u == 4 ) { 是否放右 = 1; }/*if*/
   }/*void*/
-  public void 从configG量( ) {
+  public void 从configG量( ) {/*2026年3月1日00时20分41*/
     ///Config.设ζ多选ζ放块在块の向.get().size()
     for( int i1 : Config.设ζ多选ζ放块在块の向.get( ) ) {
       从uG放块在块の向( i1 );
     }/*for*/
+    if坐差小这Z触ζy= Double.valueOf (Config.设ζif坐差小这Z触.get().get(0));
+    if坐差小这Z触ζxz= Double.valueOf (Config.设ζif坐差小这Z触.get().get(1));
   }/*void*/
   /**/;//!从`豆包▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
   public static BlockPos r玩家视线指の块坐( Player pl1 ) {/*2026年2月27日01时33分57*/
@@ -87,7 +91,7 @@ public class FhKyZlKyQm {
     }/*if*/
     return 0;
   }/*int*/
-  public static void 据pl朝向主手放块( Player pl1, BlockPos bpos ) {  /*2026年2月27日18时11分13*/
+  public static void 据pl朝向主手放块( Player pl1, BlockPos bpos ) {/*2026年2月27日18时11分13*/
     ///pl1./*c*/displayClientMessage( Component.translatable( "放块在块前", "" ), true );
     Direction pl朝向 = pl1.getDirection( );//pl朝向.getStepX()/*=0,1,-1*/ pl朝向.getStepY( )/*=0*/ pl朝向.getStepZ()
     BlockPos 放块坐 = null;
@@ -126,8 +130,8 @@ public class FhKyZlKyQm {
     Player pl1 = 事.getEntity( );
     Position pl1Pos = pl1.position( );//足坐 //todo 2026年2月27日09时17分50__和身高有关吗？
     ///pl1./*c*/displayClientMessage( Component.translatable( "co1", pl1Pos.y( ) ), false ); pl1./*c*/displayClientMessage( Component.translatable( "co1", 事.getPos( ).getY( ) ), false );
-    if( ( 前算.是否差小1且大负1( 事.getPos( ).getY( ), pl1Pos.y( ) - 1 ) == 1 ) || ( 前算.是否差小1且大负1( 事.getPos( ).getY( ), pl1Pos.y( ) + 2 ) == 1 ) ) {//!y,if下上
-      if( 前算.是否坐xz差小1且大负1( 事.getPos( ), pl1Pos ) == 1 ) {//!x,z
+    if( ( 前算.是否差小且大负d2( 事.getPos( ).getY( ), pl1Pos.y( ) - 1,if坐差小这Z触ζy ) == 1 ) || ( 前算.是否差小且大负d2( 事.getPos( ).getY( ), pl1Pos.y( ) + 2,if坐差小这Z触ζy ) == 1 ) ) {//!y,if下上
+      if( 前算.是否坐xz差小且大负d( 事.getPos( ), pl1Pos ,if坐差小这Z触ζxz) == 1 ) {//!x,z
         据pl朝向主手放块( pl1, 事.getPos( ) );
       }/*if*/
     }/*if*/

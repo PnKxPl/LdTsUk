@@ -1,4 +1,3 @@
-/
 /summon minecraft:zombie
 /summon minecraft:zombie [nbt=1]
 /summon minecraft:zombie {noAi=1b}
@@ -48,3 +47,4 @@
 /kill
 /gamemode creative
 /gamemode survival
+/gamemode creative

@@ -52,16 +52,17 @@ public class QmViJiSr {
     }/*if*/
     return 0;
   }/*void*/
-  public int 是否差小1且大负1( int i1, double d1 ) {/*2026年2月27日09时09分22*/
+  public int 是否差小且大负d2( int i1, double d1, double d2 ) {/*2026年3月1日00时09分17*/
     //*if( i1 == null || d1 == null ) { return -1; }/*if*/
     double 差; 差 = ( double ) i1 - d1;
-    if( 差 > -1 && 差 < 1 ) {
+    if( 差 > -d2 && 差 < d2 ) {
       return 1;
     }/*if*/
     return 0;
   }/*int*/
+  public int 是否差小且大负1( int i1, double d1 ) { return 是否差小且大负d2( i1, d1, 1 ); }/*int*//*2026年2月27日09时09分22*/
   //再ifY,可以上下都能触
-  public int 是否坐xz差小1且大负1( BlockPos bp1, Position p1 ) {/*2026年2月27日09时01分06*/
+  public int 是否坐xz差小且大负d( BlockPos bp1, Position p1,double 坐差小这 ) {/*2026年2月27日09时01分06*/
     if( bp1 == null || p1 == null ) { return -1; }/*if*/
     ///double 差x = 0, 差z = 0; 差x = ( double ) bp1.getX( ) - p1.x( ); 差z = ( double ) bp1.getZ( ) - p1.z( );
     ///if( 差x > -1 && 差x < 1 ) {
@@ -69,8 +70,8 @@ public class QmViJiSr {
     ///    return 1;
     ///  }/*if*/
     ///}/*if*/
-    if( 是否差小1且大负1( bp1.getX( ), p1.x( ) ) == 1 ) {
-      if( 是否差小1且大负1( bp1.getZ( ), p1.z( ) ) == 1 ) {
+    if( 是否差小且大负d2( bp1.getX( ), p1.x( ),坐差小这 ) == 1 ) {
+      if( 是否差小且大负d2( bp1.getZ( ), p1.z( ),坐差小这 ) == 1 ) {
         return 1;
       }/*if*/
     }/*if*/
