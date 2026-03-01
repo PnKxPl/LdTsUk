@@ -11,10 +11,11 @@ public class Config {
   //!填
   //✅ 完整的日志输出控制开关
   public static final ModConfigSpec.ConfigValue< List< ? extends Boolean > > ENABLE_DEBUG_LOGS__ENABLE_INFO_LOGS__ENABLE_WARN_LOGS__ENABLE_ERROR_LOGS = bui读设件ζif亮Z烧怪
+      .comment( "//名__g =get;    t =tick;    设ζ启 =设置ζ是否开启(0=关,1=开)(0=off,1=on)   " )
       .defineList( "( ENABLE_DEBUG_LOGS, ENABLE_INFO_LOGS, ENABLE_WARN_LOGS, ENABLE_ERROR_LOGS )", Arrays.asList( false, false, false, true ),
           o -> o instanceof Boolean );
+  public static final ModConfigSpec.ConfigValue< List< ? extends Boolean > > 设ζ启ζco = bui读设件ζif亮Z烧怪.defineList( "设ζ启ζ( co, )", Arrays.asList( true ),o -> o instanceof Boolean );
   public static final ModConfigSpec.Builder 分段1说明 = bui读设件ζif亮Z烧怪
-      .comment( "//名__g =get;    t =tick;    设ζ启 =设置ζ是否开启(0=关,1=开)(0=off,1=on)   " )
       .push( "if亮Z烧怪    light =burnMonster" )
       .comment( "//gPlayer --> onTick__for:gEntities(检rX,检rZ,检rY)( "
           , "if( lightValue>if亮大这Z烧怪 )=>( burn, if( lightValue>出伤ζ亮减 )=>hurt( inWall, (lightValue -出伤ζ亮减) *出伤乘 ) )"
@@ -27,7 +28,7 @@ public class Config {
           o -> o instanceof Integer );
   public static final ModConfigSpec.ConfigValue< List< ? extends Integer > > 设ζt隔ζ检ent__检rY__检rX__检rZ = bui读设件ζif亮Z烧怪
       /// 20, 32, 64, 64
-      .defineList( "( t隔ζ检ent, 检rY, 检rX, 检rZ乘 )", Arrays.asList( 15, 8, 16, 16 ),
+      .defineList( "( t隔ζ检ent, 检rY, 检rX, 检rZ乘 )", Arrays.asList( 15, 16, 16, 16 ),
           o -> o instanceof Integer );
 
   public static final ModConfigSpec.Builder 分段2 = bui读设件ζif亮Z烧怪.pop( ).push( "跳 =tpA跳    jump =(tp ~ ~1 ~)andJump" );
@@ -48,14 +49,15 @@ public class Config {
   public static final ModConfigSpec.IntValue 设ζ启ζattribute = bui读设件ζif亮Z烧怪.defineInRange( "设ζ启", 1, 0, 1 );
   public static final ModConfigSpec.IntValue 设ζattributeζt隔 = bui读设件ζif亮Z烧怪.defineInRange( "t隔", 50, 0, 15000 );
   public static final ModConfigSpec.ConfigValue< List< ? extends Integer > > 设ζattributeζ启 = bui读设件ζif亮Z烧怪
-      .defineList( "启( hp, walkSpeed, flySpeed, stepHight, 5.attackSpeed, sweep )", Arrays.asList( 1, 1, 1,1, 0, 1 ),//*Arrays.asList( 1,1,1,1,1),
+      .defineList( "启( hp, walkSpeed, flySpeed, stepHight, (5)attackSpeed, sweep )", Arrays.asList( 1, 1, 1, 1, 0, 1 ),//*Arrays.asList( 1,1,1,1,1),
           o -> o instanceof Integer );
   //!方注__(Number o -> o instanceof( (Integer)是整u /(Double)必须<1) )); 不能(( double )Number)
   //*public static final ModConfigSpec.ConfigValue< ? extends List< ? extends Number > > 设ζattribute = bui读设件ζif亮Z烧怪
   //*    .defineList( "值( hp, walkSpeed, flySpeed, attackSpeed, sweep )", Arrays.asList( 100.1, 0.15, 0.2, -1.1, 1.1 ),
   //*        o -> o instanceof Double );
   public static final ModConfigSpec.ConfigValue< ? extends List< ? extends String > > 设ζattribute = bui读设件ζif亮Z烧怪
-      .defineList( "值( hp, walkSpeed, flySpeed, stepHight, 5.attackSpeed, sweep )", Arrays.asList( "100", "0.2", "0.2", "1.2", "4", "1" ),
+      //!不能打.
+      .defineList( "值( hp, walkSpeed, flySpeed, stepHight, (5)attackSpeed, sweep )", Arrays.asList( "100", "0.2", "0.1", "1.2", "4", "1" ),
           o -> o instanceof String );
 
   public static final ModConfigSpec.Builder 分段ζif有饥饿值Z回血 = bui读设件ζif亮Z烧怪.pop( ).push( "if有饥饿值Z回血" );

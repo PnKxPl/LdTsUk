@@ -33,6 +33,7 @@ import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
 import java.util.Vector;
 
+import static com.mojang.text2speech.Narrator.LOGGER;
 import static net.minecraft.world.InteractionHand.MAIN_HAND;
 
 //import static com.pnkxpl.gd_ts_uk.core.WanderingTraderExpressDelivery.MODID;
@@ -51,19 +52,21 @@ public class UiJmHander {
 
   //!读件
   /*!记录__设置*/
-  int  tζ读confζ上1=-1500, 设ζ读confζt隔=20;
+  int tζ读confζ上1 = -1500, 设ζ读confζt隔 = 20;
   int 设ζ启ζif亮Z烧怪 = 1, 设ζ启ζ跳同tpA跳 = 1, 设ζ启ζ放块在块前 = 1, 设ζ启ζ改attr = 1, 设ζ启ζif有饥饿值Z回血 = 1;
-  float FovModifier=0;
+  float FovModifier = 0;
   //!彳亍中
   /*!记录__设置*/
 
   /*!记录*/
+  Minecraft mc1 = Minecraft.getInstance( );
   int 当t = 0;
   Player pl1 = null;
   ItemStack istack主手 = null;
   int 主手物u = 0, 主手物uζ上1 = 0;//主手物uζ放块前=主手物uζ上1,主手物uζ放块后=主手物u
   /*不需`是否将检测ent`是否将烧*/
-  public UiJmHander( ) {
+  public UiJmHander( ){
+     // mc1 = Minecraft.getInstance( );
   }
   public void 从configG量( ) { /*2026年2月27日17时40分34*/
     设ζ启ζif亮Z烧怪 = Config.设ζ启ζif亮Z烧怪.get( );
@@ -71,7 +74,7 @@ public class UiJmHander {
     设ζ启ζ放块在块前 = Config.设ζ启ζ放块在块前.get( );
     设ζ启ζ改attr = Config.设ζ启ζattribute.get( );
     设ζ启ζif有饥饿值Z回血 = Config.设ζ启ζif有饥饿值Z回血.get( );
-    FovModifier      =  Float.parseFloat(Config.设ζFovModifier.get( ).get( 0 ));
+    FovModifier = Float.parseFloat( Config.设ζFovModifier.get( ).get( 0 ) );
   }/*void*/
   /*
   PlayerInteractEvent$    EntityInteract	玩家交互事件－实体交互
@@ -87,7 +90,7 @@ public class UiJmHander {
   /*ChunkTicketLevelUpdatedEvent =彳亍1次;    ServerTickEvent.Post =可; */
   @SubscribeEvent public void onTick( ServerTickEvent.Post 事 ) {/*2026年2月21日06时17分58*/
     ///if(/*!t隔,推迟彳亍*/pl1.tickCount > 在首几t不彳亍 ) {/*https://docs.neoforged.net/docs/entities/#mobcategory */}/*if*/
-    if( pl1 == null ) { return; }/*if*/
+    if( pl1 == null ) { LOGGER.info("pl1 =null"); return; }/*if*/
     if( pl1.tickCount - tζ读confζ上1 >= 设ζ读confζt隔 ) {//!时隔够=>读conf
       tζ读confζ上1 = pl1.tickCount;
       从configG量( );
@@ -99,7 +102,7 @@ public class UiJmHander {
       istack主手 = pl1.getItemInHand( MAIN_HAND );//todo 2026年2月27日07时15分50__每t记录`会在放块后吗
     } ;
     if( 设ζ启ζif亮Z烧怪 == 1 ) {
-      if亮Z烧怪.gVEnt_检测entAIf亮Z烧怪( pl1 );
+      if亮Z烧怪.gVEnt_检测entAIf亮Z烧怪( pl1, mc1 );
     }/*if*/
     if( 设ζ启ζ跳同tpA跳 == 1 ) {
       跳.ifY大yZ改是否已去更高( pl1 );
@@ -133,6 +136,7 @@ public class UiJmHander {
   //(事.getPos,pl1.getOnPos)=块坐(不是`空气坐)    BlockPos不能==
   @SubscribeEvent public void PIEvζ左键点块( PlayerInteractEvent.LeftClickBlock 事 ) {
     pl1 = 事.getEntity( );
+    ///if( Config.设ζ启ζco.get( ).get( 0 ) ) { pl1./*c*/displayClientMessage( Component.translatable( "pl1 !=null", "" ), false ); }/*if*/
     ///pl1./*c*/displayClientMessage( Component.translatable( "co1",  事.getPos( ).getY() ), true );
     ///pl1./*c*/displayClientMessage( Component.translatable( "co1",  pl1.getOnPos().getY() ), true );
     ///pl1./*c*/displayClientMessage( Component.translatable( "co1" ,""  ), true );

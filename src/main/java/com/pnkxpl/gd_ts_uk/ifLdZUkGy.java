@@ -101,13 +101,13 @@ public class ifLdZUkGy {
     }/*if*/
   }/*void*/
   /*!(forAGVEnt --> if亮Z烧怪)或(forVEnt --> if亮Z烧怪)*/
-  public void gVEnt_检测entAIf亮Z烧怪( Player pl1 ) {/*2026年2月21日07时12分19*/
+  public void gVEnt_检测entAIf亮Z烧怪( Player pl1, Minecraft mc1 ) {/*2026年2月21日07时12分19*/
     int 当t = pl1.tickCount;
     ///if(/*!恢复主角grav*/当t - 记tζsetNoGravity >= 10 ) {
     /// pl1.setNoGravity( false );
     ///}/*if*/
     if(/*!时隔够=>将检*/当t - 记t点ζ检entζ上1 >= 设ζt隔ζ检ent ) { ///pl1./*c*/displayClientMessage(Component.translatable("触if烧", ""), false);
-      Level lev1 = pl1.level( ); Minecraft mc1 = Minecraft.getInstance( );
+      Level lev1 = pl1.level( );
       LayerLightEventListener LdJm_FhKy = mc1.level.getLightEngine( ).getLayerListener( LightLayer.BLOCK );
     ///if( 是否已读config == 0 ) {/*2026年2月26日04时10分44*/是否已读config = 1; }/*if*/
       从configG量( ); ///pl1./*c*/displayClientMessage( Component.translatable( "if亮Z烧怪.从configG量", 0 ), false );
@@ -177,6 +177,6 @@ public class ifLdZUkGy {
   private void if时隔Z_if亮Z烧( Player pl1 ) {/*2026年2月21日06时47分42*/
     ///if(/*!时隔*/pl1.tickCount % 5 == 0 ) {/*https://docs.neoforged.net/docs/entities/#mobcategory */} else {/*非特时=>retu*/}/*if*/
     ///this.pl1 = pl1;//!填  2026年2月27日23时41分40__有问题吗!
-    gVEnt_检测entAIf亮Z烧怪( pl1 );
+    //*gVEnt_检测entAIf亮Z烧怪( pl1,mc1 );
   }/*void*/
 }/*class*/
