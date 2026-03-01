@@ -42,7 +42,7 @@ public class Config {
       .defineList( "( 5元 )", Arrays.asList( 1, 1, 1, 1, 1 ),
           o -> o instanceof Integer );
   public static final ModConfigSpec.ConfigValue< ? extends List< ? extends String > > 设ζif坐差小这Z触 = bui读设件ζif亮Z烧怪
-      .defineList( "( if坐差小这Z触ζy, if坐差小这Z触ζxz )", Arrays.asList( "1.2", "1.2" ),
+      .defineList( "( if坐差小这Z触ζy, if坐差小这Z触ζxz )", Arrays.asList( "1.0", "1.2" ),
           o -> o instanceof String );/*2026年3月1日00时17分09*/
 
   public static final ModConfigSpec.Builder 分段ζattribute = bui读设件ζif亮Z烧怪.pop( ).push( "attribute" );
